@@ -16,9 +16,11 @@ jobs:
           node-version: '18'
       - run: npm ci
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: ./out
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -29,5 +31,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v2
+      - uses: actions/deploy-pages@v3
         id: deployment
