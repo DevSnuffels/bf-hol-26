@@ -32,6 +32,7 @@ body {
   background: var(--cream);
   color: var(--navy);
   font-family: var(--font-raleway), system-ui, sans-serif;
+  font-size: clamp(17px, 1.8vw, 19px);
 }
 
 @keyframes slideUp {

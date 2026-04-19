@@ -4,6 +4,10 @@ import familiesData from '../../../data/families.json';
 import itineraryData from '../../../data/itinerary.json';
 import HotelCarousel from '../../../components/HotelCarousel';
 import StickyNav from '../../../components/StickyNav';
+import RestaurantCarousel from '../../../components/RestaurantCarousel';
+import CardCarousel from '../../../components/CardCarousel';
+import InteractiveChecklist from '../../../components/InteractiveChecklist';
+import VideoEmbed from '../../../components/VideoEmbed';
 
 interface FamilyPageProps {
   params: Promise<{ family: string }>;
@@ -19,6 +23,10 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
   const familyData = familiesData[family as keyof typeof familiesData];
   const cruiseData = itineraryData.cruise;
   const lob = cruiseData.lifeonboard;
+
+  const cabinImages = Array.isArray((familyData.cabin as any).images)
+    ? (familyData.cabin as any).images
+    : undefined;
 
   const familyFlights = itineraryData.flights.filter(
     (f) =>
@@ -144,7 +152,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
             className="rounded-2xl p-8 mb-4 relative overflow-hidden"
             style={{ background: 'linear-gradient(135deg, var(--deep-blue), var(--ocean))' }}
           >
-            <span className="absolute right-6 top-5 text-5xl" style={{ opacity: 0.12 }}>⚓</span>
+            <span className="absolute right-6 top-5 text-5xl" style={{ opacity: 0.12 }} aria-hidden="true">⚓</span>
             <h3 className="text-2xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
               {cruiseData.ship}
             </h3>
@@ -231,6 +239,20 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                     )}
                     <p className="text-sm leading-relaxed mb-3" style={{ color: '#4a5c6e' }}>{port.description}</p>
 
+                    {/* Kid highlight */}
+                    {family === 'boyle' && 'kidHighlight' in port && port.kidHighlight && (
+                      <div
+                        className="rounded-xl px-4 py-3 mb-3 flex items-start gap-2"
+                        style={{ background: 'rgba(243,156,18,0.10)', border: '1px solid rgba(243,156,18,0.25)' }}
+                      >
+                        <span aria-hidden="true" className="flex-shrink-0 text-lg">⭐</span>
+                        <p className="text-sm font-medium leading-snug" style={{ color: 'var(--navy)' }}>
+                          <span className="text-xs uppercase tracking-wider font-bold mr-2" style={{ color: 'var(--sunset)' }}>Kids:</span>
+                          {(port as { kidHighlight: string }).kidHighlight}
+                        </p>
+                      </div>
+                    )}
+
                     {/* Destination image */}
                     {'image' in port && port.image && (
                       <img
@@ -296,7 +318,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                                         alt={img.caption}
                                         loading="lazy"
                                         className="w-full object-cover"
-                                        style={{ height: '140px' }}
+                                        style={{ height: '180px' }}
                                       />
                                       <div
                                         className="absolute bottom-0 left-0 right-0 px-2 py-1"
@@ -321,19 +343,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                                   <p className="text-xs uppercase tracking-widest font-semibold mb-2" style={{ color: '#6b7d8e' }}>
                                     See it for yourself
                                   </p>
-                                  <div
-                                    className="rounded-xl overflow-hidden"
-                                    style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}
-                                  >
-                                    <iframe
-                                      src={`https://www.youtube.com/embed/${excVideo}`}
-                                      title={`${exc.name} video`}
-                                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                      allowFullScreen
-                                      loading="lazy"
-                                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-                                    />
-                                  </div>
+                                  <VideoEmbed videoId={excVideo} title={`${exc.name} video`} />
                                 </div>
                               )}
                             </div>
@@ -367,37 +377,31 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
               Dining — You&apos;re Spoilt for Choice
             </h3>
             <p className="text-sm mb-5" style={{ color: 'var(--sky-blue)', fontWeight: 300 }}>
-              Seven restaurants included, plus two speciality options
+              11 dining experiences — 7 included, 4 speciality restaurants
             </p>
-            <div className="space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
               {lob.dining.map((item) => (
-                <p key={item.name} className="text-sm leading-relaxed" style={{ color: 'var(--sky-blue)' }}>
-                  <strong className="text-white">{item.name}</strong> — {item.desc}
-                </p>
+                <div key={item.name} className="flex items-start gap-2">
+                  <span
+                    className="flex-shrink-0 mt-0.5 text-xs px-1.5 py-0.5 rounded font-medium"
+                    style={{
+                      background: (item as { included: boolean }).included ? 'rgba(133,193,233,0.2)' : 'rgba(231,76,60,0.25)',
+                      color: (item as { included: boolean }).included ? 'var(--sky-blue)' : '#f1948a',
+                    }}
+                  >
+                    {(item as { included: boolean }).included ? '✓' : '£'}
+                  </span>
+                  <p className="text-sm leading-relaxed" style={{ color: 'var(--sky-blue)' }}>
+                    <strong className="text-white">{item.name}</strong>
+                    {' '}<span style={{ opacity: 0.7 }}>{(item as { type: string }).type}</span>
+                  </p>
+                </div>
               ))}
             </div>
           </div>
 
-          {/* Dining photo grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
-            {lob.diningImages.map((img) => (
-              <div key={img.url} className="relative overflow-hidden rounded-xl" style={{ boxShadow: '0 4px 16px rgba(10,22,40,0.08)' }}>
-                <img
-                  src={img.url}
-                  alt={img.caption}
-                  loading="lazy"
-                  className="w-full object-cover"
-                  style={{ height: '150px' }}
-                />
-                <div
-                  className="absolute bottom-0 left-0 right-0 px-2 py-1 text-xs"
-                  style={{ background: 'rgba(10,22,40,0.55)', color: 'rgba(255,255,255,0.9)', backdropFilter: 'blur(4px)' }}
-                >
-                  {img.caption}
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* Restaurant Carousel */}
+          <RestaurantCarousel dining={lob.dining as Parameters<typeof RestaurantCarousel>[0]['dining']} />
 
           {/* Dining tips */}
           <div
@@ -415,65 +419,35 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
             </ul>
           </div>
 
-          {/* Entertainment card */}
-          <div
-            className="rounded-2xl p-8 mb-4 relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #1a3a5c, #2e6da4)' }}
-          >
-            <h3 className="text-xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
-              Entertainment &amp; Nightlife
+          {/* Entertainment Carousel */}
+          <div className="mb-2">
+            <p className="text-xs uppercase tracking-[5px] mb-1" style={{ color: 'var(--azure)', fontWeight: 600 }}>Entertainment & Nightlife</p>
+            <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)' }}>
+              11 Venues — Something Every Hour
             </h3>
-            <p className="text-sm mb-5" style={{ color: 'var(--sky-blue)', fontWeight: 300 }}>
-              Something happening every hour of the day
+            <p className="text-sm mb-4" style={{ color: '#3a4a5c' }}>
+              From West End theatre and a British pub to a casino, speakeasy, and open-air cinema under the stars.
             </p>
-            <div className="space-y-3">
-              {lob.entertainment.map((item) => (
-                <p key={item.name} className="text-sm leading-relaxed" style={{ color: 'var(--sky-blue)' }}>
-                  <strong className="text-white">{item.name}</strong> — {item.desc}
-                </p>
-              ))}
-            </div>
           </div>
+          <CardCarousel
+            items={(lob as any).entertainmentVenues}
+            accentColor="var(--azure)"
+          />
 
-          {/* Spa & Pool card */}
-          <div
-            className="rounded-2xl p-8 mb-4 relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #2c3e50, #4a6741)' }}
-          >
-            <h3 className="text-xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
-              Pool, Spa &amp; Relaxation
+          {/* Ship Facilities Carousel */}
+          <div className="mb-2">
+            <p className="text-xs uppercase tracking-[5px] mb-1" style={{ color: 'var(--azure)', fontWeight: 600 }}>Ship Facilities</p>
+            <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)' }}>
+              Pools, Spa, Gym & More
             </h3>
-            <p className="text-sm mb-5" style={{ color: 'var(--sky-blue)', fontWeight: 300 }}>
-              From sunbathing to the biggest spa in the Marella fleet
+            <p className="text-sm mb-4" style={{ color: '#3a4a5c' }}>
+              Pool deck, Champneys spa, kids clubs for all ages, minigolf, gym, and the adults-only Veranda.
             </p>
-            <div className="space-y-3">
-              {lob.spa.map((item) => (
-                <p key={item.name} className="text-sm leading-relaxed" style={{ color: 'var(--sky-blue)' }}>
-                  <strong className="text-white">{item.name}</strong> — {item.desc}
-                </p>
-              ))}
-            </div>
           </div>
-
-          {/* Family & Kids card */}
-          <div
-            className="rounded-2xl p-8 mb-6 relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, #5b2c6f, #884ea0)' }}
-          >
-            <h3 className="text-xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
-              For Families &amp; Kids
-            </h3>
-            <p className="text-sm mb-5" style={{ color: '#d7bde2', fontWeight: 300 }}>
-              Plenty to keep younger cruisers entertained
-            </p>
-            <div className="space-y-3">
-              {lob.kids.map((item) => (
-                <p key={item.name} className="text-sm leading-relaxed" style={{ color: '#d7bde2' }}>
-                  <strong className="text-white">{item.name}</strong> — {item.desc}
-                </p>
-              ))}
-            </div>
-          </div>
+          <CardCarousel
+            items={(lob as any).shipFacilities}
+            accentColor="var(--ocean)"
+          />
 
           {/* All-inclusive note */}
           <div
@@ -495,23 +469,8 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
           <p className="text-sm mb-4" style={{ color: '#4a5c6e' }}>
             Want to see what the ship looks like before you board? Here&apos;s a full walkthrough tour:
           </p>
-          <div
-            className="rounded-2xl overflow-hidden mb-6"
-            style={{
-              position: 'relative',
-              paddingBottom: '56.25%',
-              height: 0,
-              boxShadow: '0 12px 40px rgba(10,22,40,0.12)',
-            }}
-          >
-            <iframe
-              src={`https://www.youtube.com/embed/${cruiseData.shipTourVideo}`}
-              title="Marella Explorer Ship Tour"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              loading="lazy"
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-            />
+          <div className="rounded-2xl overflow-hidden mb-6" style={{ boxShadow: '0 12px 40px rgba(10,22,40,0.12)' }}>
+            <VideoEmbed videoId={cruiseData.shipTourVideo} title="Marella Explorer Ship Tour" />
           </div>
 
           {/* Additional ship tour videos */}
@@ -521,18 +480,8 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                 <div key={vid.id}>
                   <p className="text-sm font-semibold mb-2" style={{ color: 'var(--navy)' }}>{vid.title}</p>
                   <p className="text-xs mb-3" style={{ color: '#6b7d8e' }}>{vid.desc}</p>
-                  <div
-                    className="rounded-xl overflow-hidden"
-                    style={{ position: 'relative', paddingBottom: '56.25%', height: 0, boxShadow: '0 8px 24px rgba(10,22,40,0.08)' }}
-                  >
-                    <iframe
-                      src={`https://www.youtube.com/embed/${vid.id}`}
-                      title={vid.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      loading="lazy"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-                    />
+                  <div className="rounded-xl overflow-hidden" style={{ boxShadow: '0 8px 24px rgba(10,22,40,0.08)' }}>
+                    <VideoEmbed videoId={vid.id} title={vid.title} />
                   </div>
                 </div>
               ))}
@@ -551,6 +500,15 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
               ? "You have a balcony cabin with Suite Service — so you'll have your own private outdoor space to enjoy morning coffee or watch the sunset, plus some lovely extra perks."
               : 'Your cabin details are listed below.'}
           </p>
+
+          {cabinImages && cabinImages.length > 0 && (
+            <div className="rounded-2xl overflow-hidden mb-6 shadow-sm">
+              <HotelCarousel
+                images={cabinImages}
+                alt={`${familyData.cabin.type} cabin image`}
+              />
+            </div>
+          )}
 
           <div className="bg-white rounded-2xl overflow-hidden mb-4" style={{ boxShadow: '0 8px 30px rgba(10,22,40,0.08)' }}>
             <div className="p-6 md:p-8">
@@ -616,7 +574,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
               <div style={{ background: 'linear-gradient(135deg, var(--sand), var(--warm-sand))', position: 'relative' }}>
                 <HotelCarousel images={familyData.hotel.images} alt={familyData.hotel.name} />
                 <div className="px-8 py-6" style={{ position: 'relative' }}>
-                  <span className="absolute right-6 top-4 text-4xl" style={{ opacity: 0.25 }}>☀</span>
+                  <span className="absolute right-6 top-4 text-4xl" style={{ opacity: 0.25 }} aria-hidden="true">☀</span>
                   <div className="text-lg tracking-widest mb-1" style={{ color: 'var(--sunset)', letterSpacing: '4px' }}>
                     {'★'.repeat(familyData.hotel.stars)}
                   </div>
@@ -647,18 +605,8 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                   <p className="text-xs uppercase tracking-widest font-semibold mb-3" style={{ color: 'var(--azure)' }}>
                     Take a look around
                   </p>
-                  <div
-                    className="rounded-2xl overflow-hidden"
-                    style={{ position: 'relative', paddingBottom: '56.25%', height: 0, boxShadow: '0 12px 40px rgba(10,22,40,0.1)' }}
-                  >
-                    <iframe
-                      src={`https://www.youtube.com/embed/${familyData.hotel.video}`}
-                      title={`${familyData.hotel.name} video`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      loading="lazy"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
-                    />
+                  <div className="rounded-2xl overflow-hidden" style={{ boxShadow: '0 12px 40px rgba(10,22,40,0.1)' }}>
+                    <VideoEmbed videoId={familyData.hotel.video as string} title={`${familyData.hotel.name} video`} />
                   </div>
                 </div>
               )}
@@ -736,24 +684,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
             <h3 className="text-xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
               Pre-Holiday Checklist
             </h3>
-            <div className="space-y-5">
-              {checklist.map((item, i) => (
-                <div key={i} className="flex gap-4">
-                  <div
-                    className="flex-shrink-0 mt-0.5"
-                    style={{
-                      width: '22px',
-                      height: '22px',
-                      border: '2px solid var(--sky-blue)',
-                      borderRadius: '5px',
-                    }}
-                  />
-                  <p className="text-sm leading-relaxed" style={{ color: 'var(--sky-blue)' }}>
-                    <strong className="text-white">{item.title}:</strong> {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <InteractiveChecklist items={checklist} storageKey={`checklist-${family}`} />
           </div>
         </section>
 
@@ -764,7 +695,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
         className="text-center py-16 px-4 mt-10"
         style={{ background: 'var(--navy)', color: 'var(--sky-blue)', fontWeight: 300, letterSpacing: '1px' }}
       >
-        <div className="text-4xl mb-4">🚢</div>
+        <div className="text-4xl mb-4" aria-hidden="true">🚢</div>
         <p className="text-base">Not long now — let the countdown begin!</p>
         <p className="text-xs mt-2" style={{ opacity: 0.4 }}>Holiday Summary · July 2026</p>
       </footer>
