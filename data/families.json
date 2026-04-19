@@ -1,0 +1,83 @@
+{
+  "boyle": {
+    "name": "The Boyles",
+    "reference": "REF: 2XXXXXX9",
+    "members": [
+      { "name": "Mark", "role": "Lead Passenger" },
+      { "name": "Sinead" },
+      { "name": "Clodagh" },
+      { "name": "Meabh" }
+    ],
+    "cabin": {
+      "type": "Family Balcony Cabin with Suite Service",
+      "details": [
+        "20m\u00b2 cabin with furnished balcony",
+        "Double bed, sofa bed & fold-down bed \u2014 sleeps up to 5",
+        "En suite bathroom with shower",
+        "Nespresso coffee machine & tea-making facilities",
+        "Xbox 360 gaming console in the cabin"
+      ],
+      "perks": [
+        "Continental breakfast in bed (once per person per week)",
+        "Free pressing service for up to 3 items of clothing",
+        "Nespresso coffee machine, slippers, dressing gowns",
+        "Upgraded toiletries and pillow menu"
+      ],      "images": [
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/a29492d5-47dd-44c0-95a2-b03d0080c636/ACC_150016_MARELLA_VOYAGER_F180WebOriginalCompressed.jpg",
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/f9f87bd2-ee96-46b3-885c-b03d0080ca85/ACC_150016_MARELLA_VOYAGER_F181WebOriginalCompressed.jpg",
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/35467b09-244e-416c-b61b-b03d0080cfb7/ACC_150016_MARELLA_VOYAGER_F182WebOriginalCompressed.jpg",
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/01c3cf0f-d6fa-421c-a99e-b03d0080c1c5/ACC_150016_MARELLA_VOYAGER_F179WebOriginalCompressed.jpg"
+      ],      "navigateNote": "Download the Marella Navigate app before you travel \u2014 you can use it onboard to check daily schedules, book speciality restaurants, and manage your excursion tickets. Everything in one place."
+    },
+    "hotel": {
+      "name": "TUI BLUE Sensatori Biomar",
+      "location": "Sa Coma, Majorca",
+      "stars": 5,
+      "checkIn": "18 Jul 2026",
+      "checkOut": "25 Jul 2026",
+      "room": "Select Junior Suite with Large Terrace",
+      "board": "All Inclusive",
+      "images": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/0d/20/40/caption.jpg?w=1000&h=-1&s=1",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/7b/07/2a/caption.jpg?w=1000&h=-1&s=1"
+      ],
+      "video": "Zg6ncvUcLz8"
+    },
+    "flights": {
+      "return": "25 Jul 2026"
+    }
+  },
+  "ferris": {
+    "name": "The Ferrises",
+    "members": [
+      { "name": "Attracta", "role": "Lead Passenger" },
+      { "name": "Roisin" },
+      { "name": "Connor" }
+    ],
+    "cabin": {
+      "type": "Balcony Junior Suite Cabin with Suite Service",
+      "details": [
+        "Sleeps up to three people with two single beds that can combine into a queen-size bed, plus a sofa bed",
+        "En suite bathroom with shower and WC",
+        "Balcony of almost 13m² with table and chairs",
+        "Comfortable seating and upgraded cabin amenities"
+      ],
+      "perks": [
+        "Continental breakfast in bed per person per week",
+        "Free pressing service for up to three items during your stay",
+        "Coffee machine, slippers and dressing gown",
+        "Upgraded toiletries and choice of pillows"
+      ],
+      "images": [
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/452581f4-4ad0-4a77-be7c-b03d00812a2f/ACC_150016_MARELLA_VOYAGER_F201WebOriginalCompressed.jpg",
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/53a5d9d1-ec42-4d21-97e3-b03d00812ed9/ACC_150016_MARELLA_VOYAGER_F202WebOriginalCompressed.jpg",
+        "https://content.tui.co.uk/adamtui/2023_7/12_7/582eb0d9-65a8-4225-9e2f-b03d0081259d/ACC_150016_MARELLA_VOYAGER_F200WebOriginalCompressed.jpg"
+      ],
+      "navigateNote": "Download the Marella Navigate app before you travel — you can use it onboard to check daily schedules, book speciality restaurants, and manage your excursion tickets. Everything in one place."
+    },
+    "hotel": null,
+    "flights": {
+      "return": "18 Jul 2026"
+    }
+  }
+}

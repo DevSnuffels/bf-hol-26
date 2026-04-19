@@ -1,0 +1,814 @@
+{
+  "cruise": {
+    "ship": "Marella Explorer",
+    "route": "Treasures of the Mediterranean",
+    "embarkation": "11 Jul 2026",
+    "disembarkation": "18 Jul 2026",
+    "duration": "7 Nights",
+    "board": "Premium All Inclusive",
+    "embarkationNote": "Palma Port, Cruise Terminal, Estacio Maritima. Latest ship check-in is two hours before sailing time. The ship departs at 22:00 on the first evening.",
+    "shipTourVideo": "P2Ejrfr27xA",
+    "ports": [
+      {
+        "day": 1,
+        "date": "Saturday 11 July",
+        "port": "Palma, Majorca",
+        "time": "Departing 22:00",
+        "highlight": true,
+        "description": "Board the ship, settle into your cabin, and wave goodbye to Palma as we set sail into the sunset.",
+        "excursions": [],
+        "kidHighlight": "Spot the Marella Explorer in the harbour before you board — she's the big one! 🚢"
+      },
+      {
+        "day": 2,
+        "date": "Sunday 12 July",
+        "port": "At Sea",
+        "description": "A full day to explore the ship, lounge by the pool, catch a show, or simply relax with a cocktail on deck.",
+        "excursions": [],
+        "kidHighlight": "First full day at sea — find the pools, race to explore every deck, and watch for dolphins off the bow! 🐬"
+      },
+      {
+        "day": 3,
+        "date": "Monday 13 July",
+        "port": "Olbia, Sardinia",
+        "time": "08:00 – 14:00",
+        "description": "Crystal-clear waters and the rugged beauty of Sardinia’s Emerald Coast. Wander the old town or hit the beach.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Cala_Goloritz%C3%A9_%28spiaggia%29.jpg",
+        "excursions": [
+          {
+            "families": [
+              "boyle",
+              "ferris"
+            ],
+            "label": "Both Families",
+            "name": "Discover Sardinia",
+            "duration": "5 hours · Everyone",
+            "description": "Wind your way into the hilly, village-speckled interior of Sardinia — past cork forests, vineyards, and olive groves. First stop is Aggius, one of the oldest villages on the island, where you’ll explore an ethnographic museum filled with traditional costumes and hand-woven fabrics. Then on to Tempio, a beautiful ancient village with cobbled streets, a Baroque cathedral, artisan shops, and Italian fashion boutiques. Grab a handmade pasta lunch at a family-run trattoria before heading back to the coast. A proper taste of the real Sardinia.",
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Aggius_panorama.jpg/1280px-Aggius_panorama.jpg",
+                "caption": "Aggius — ancient granite village in the Gallura hills"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Tempio_Pausania_-_view.JPG/1280px-Tempio_Pausania_-_view.JPG",
+                "caption": "Tempio Pausania — the city of stone"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tempio_Pausania%2C_chiesa_di_San_Pietro_%2808%29.jpg/1280px-Tempio_Pausania%2C_chiesa_di_San_Pietro_%2808%29.jpg",
+                "caption": "Cathedral of San Pietro, Tempio Pausania"
+              }
+            ]
+          }
+        ],
+        "kidHighlight": "Crystal-clear turquoise water you can see straight through to the sandy bottom. Some of the cleanest sea in Europe! 🏖️"
+      },
+      {
+        "day": 4,
+        "date": "Tuesday 14 July",
+        "port": "Naples, Italy",
+        "time": "07:00 – 17:00",
+        "description": "Gateway to Pompeii and the isle of Capri. Try authentic Neapolitan pizza, explore ancient ruins, or take a boat across to the stunning Blue Grotto.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg/1280px-Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+        "excursions": [
+          {
+            "families": [
+              "boyle"
+            ],
+            "label": "Boyle Family",
+            "name": "Pompeii & Herculaneum",
+            "duration": "All 4 Boyles",
+            "description": "A real history blockbuster — two ancient Roman cities frozen in time by the eruption of Mount Vesuvius in 79 AD. Walk through the streets of Pompeii, where you’ll see preserved houses, temples, baths, and even a Roman fast-food counter still etched into the stone. Then head to Herculaneum, a smaller but even better-preserved site where wooden furniture, mosaics, and food have survived beneath the volcanic mud. It’s like stepping back 2,000 years — absolutely jaw-dropping.",
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pompeii_Forum.JPG/1280px-Pompeii_Forum.JPG",
+                "caption": "Pompeii Forum with Mount Vesuvius beyond"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Herculaneum_Road_in_2015.jpg/1280px-Herculaneum_Road_in_2015.jpg",
+                "caption": "Perfectly preserved Roman street — Herculaneum"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Herculaneum_Columns_in_2015.jpg/1280px-Herculaneum_Columns_in_2015.jpg",
+                "caption": "Still-standing columns at Herculaneum"
+              }
+            ],
+            "video": "77Ul5OMqdIA"
+          },
+          {
+            "families": [
+              "ferris"
+            ],
+            "label": "Ferris Family",
+            "name": "Pompeii & Mount Vesuvius",
+            "duration": "Marion, Roisin & Connor",
+            "description": "The same incredible walk through the ancient streets of Pompeii, but instead of Herculaneum, the Ferris family heads up Mount Vesuvius itself — the only active volcano on mainland Europe you can actually climb. Hike to the crater rim and peer down into the belly of the beast, with sweeping views across the Bay of Naples. Combine that with the eerie, awe-inspiring ruins below and it’s an unforgettable day.",
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pompeii_Forum.JPG/1280px-Pompeii_Forum.JPG",
+                "caption": "Pompeii Forum — 2,000 years frozen in time"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Il_cratere_del_Vulcano_-_panoramio.jpg/1280px-Il_cratere_del_Vulcano_-_panoramio.jpg",
+                "caption": "The crater of Mount Vesuvius"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_crater_of_Vesuvius_in_2012_%28composite_photograph%29.jpg/1280px-The_crater_of_Vesuvius_in_2012_%28composite_photograph%29.jpg",
+                "caption": "Looking down into Vesuvius — the only active volcano on mainland Europe you can climb"
+              }
+            ],
+            "video": "77Ul5OMqdIA"
+          }
+        ],
+        "kidHighlight": "Pompeii — a whole Roman city frozen in time when a volcano erupted 2,000 years ago. You can walk the actual streets! 🌋"
+      },
+      {
+        "day": 5,
+        "date": "Wednesday 15 July",
+        "port": "Civitavecchia (Rome), Italy",
+        "time": "07:00 – 19:00",
+        "description": "A full 12 hours — enough time to visit the Colosseum, toss a coin in the Trevi Fountain, or simply soak in the eternal city’s atmosphere.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1280px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+        "excursions": [
+          {
+            "families": [
+              "boyle"
+            ],
+            "label": "Boyle Family",
+            "name": "Rome Explorer",
+            "duration": "10 hours · All 4 Boyles",
+            "description": "A full day in the Eternal City — and you’ll need every minute. Coach from the port into the heart of Rome to see the Colosseum, where gladiators once fought in front of 50,000 spectators. Walk past the Roman Forum and Palatine Hill, toss a coin in the Trevi Fountain, marvel at the Pantheon, and stroll past the Spanish Steps. After lunch at a traditional Italian restaurant, cross into Vatican City to see St Peter’s Square and Basilica — one of the most beautiful spots on earth. Ten hours of pure wonder.",
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
+                "caption": "The Colosseum — once home to 50,000 spectators"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg",
+                "caption": "Trevi Fountain — toss your coin and wish"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1280px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
+                "caption": "St Peter’s Square, Vatican City"
+              }
+            ]
+          }
+        ],
+        "kidHighlight": "The Colosseum! Where gladiators fought in front of 50,000 screaming fans. One of the most famous buildings on Earth! ⚔️"
+      },
+      {
+        "day": 6,
+        "date": "Thursday 16 July",
+        "port": "Ajaccio, Corsica",
+        "time": "09:00 – 15:00",
+        "description": "Napoleon’s birthplace, with colourful markets, stunning mountain backdrops, and beautiful beaches just a short ride from the port.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Port_Tino_Rossi_-_Ajaccio_%2815148706455%29.jpg/1280px-Port_Tino_Rossi_-_Ajaccio_%2815148706455%29.jpg",
+        "excursions": [
+          {
+            "families": [
+              "boyle"
+            ],
+            "label": "Boyle Family",
+            "name": "Flavours & Footsteps of Imperial Ajaccio",
+            "duration": "2.5 hours · All 4 Boyles",
+            "description": "A walking tour through Napoleon’s birthplace, tracing his story from the house where he was born to the cathedral where he was baptised. Wander tree-lined boulevards, peek into the charming Corsican food market at Place de Gaulle — think local cheeses, charcuterie, honey, and wines — and sample some of the island’s bold, rustic flavours along the way. A short and sweet morning that leaves plenty of time for the beach or a wander afterwards.",
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ajaccio_MN1JPG.jpg/1280px-Ajaccio_MN1JPG.jpg",
+                "caption": "Maison Bonaparte — where Napoleon was born in 1769"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/NapoleonBirth.jpg/1280px-NapoleonBirth.jpg",
+                "caption": "Napoleon’s birth room inside the museum"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Port_Ajaccio.JPG/1280px-Port_Ajaccio.JPG",
+                "caption": "Ajaccio — colourful harbour and old town"
+              }
+            ]
+          }
+        ],
+        "kidHighlight": "Birthplace of Napoleon — the tiny general who once ruled almost all of Europe. His house is still there! 👑"
+      },
+      {
+        "day": 7,
+        "date": "Friday 17 July",
+        "port": "Palamós, Spain",
+        "time": "09:00 – 17:00",
+        "description": "A charming Costa Brava fishing town famous for its prawns, golden beaches, and a gorgeous medieval old quarter.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Palam%C3%B3s_2.jpg",
+        "excursions": [
+          {
+            "families": [
+              "boyle",
+              "ferris"
+            ],
+            "label": "Both Families",
+            "name": "Mini Train & Medieval Villages",
+            "duration": "Everyone",
+            "description": "All aboard a little tourist train for a scenic ride through the stunning Costa Brava countryside. You’ll wind through charming medieval villages with narrow cobbled streets, ancient stone archways, and gorgeous views over terracotta rooftops to the sea. Stop to explore the old quarters, browse artisan shops, and soak in that golden Spanish light. It’s relaxed, picturesque, and the perfect way to spend the last port day together before heading back to the ship.",
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Pals.JPG/1280px-Pals.JPG",
+                "caption": "Pals — a stunning medieval village on the Costa Brava"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pals.jpg/1280px-Pals.jpg",
+                "caption": "Cobblestone streets and stone archways, Pals"
+              }
+            ]
+          }
+        ],
+        "kidHighlight": "A sun-drenched Costa Brava beach town. Perfect swimming, ice cream, and the bluest water you've ever seen! 🏄"
+      },
+      {
+        "day": 8,
+        "date": "Saturday 18 July",
+        "port": "Palma, Majorca",
+        "time": "Arriving 06:00",
+        "highlight": true,
+        "description": "Back to Palma — time to say goodbye to the ship and head to the resort for week two!",
+        "excursions": [],
+        "kidHighlight": "Last morning on the ship — last chance for a swim before we disembark back in Palma! 🌊"
+      }
+    ],
+    "lifeonboard": {
+      "intro": "The Marella Explorer is a mid-sized cruise ship carrying around 1,830 passengers — big enough to pack in loads of restaurants, bars, and entertainment, but small enough that you’ll quickly feel at home. The vibe is relaxed and friendly, with a distinctly British feel. Think cocktails by the pool by day, West End–style shows by night, and no shortage of places to eat in between.",
+      "inclusiveNote": "Everyone is on Premium All Inclusive, which means meals in all included restaurants, plus a wide selection of drinks — wines, beers, spirits, cocktails, Prosecco, and soft drinks — all covered. There’s really no need to worry about tabs.",
+      "facilityVideos": [
+        {
+          "id": "UxMY9q2FVKA",
+          "title": "Marella Explorer Ship Tour (with tips)",
+          "desc": "A full walkthrough of the ship with handy tips from someone who’s done the cruise — filmed in 2025."
+        },
+        {
+          "id": "a5UFXB9ZrSE",
+          "title": "Complete Cruise Ship Tour",
+          "desc": "Deck-by-deck tour of all 13 passenger decks on the Marella Explorer."
+        }
+      ],
+      "dining": [
+        {
+          "name": "Latitude 53",
+          "type": "Main Restaurant",
+          "hours": "Breakfast, lunch & dinner",
+          "included": true,
+          "dress": "Casual by day, smart in the evening",
+          "desc": "The grand main dining room with floor-to-ceiling windows and full waiter service. No assigned tables or set mealtimes — just turn up. The dinner menu rotates nightly over 7 nights. Look out for ‘Treat Yourself’ dishes like rack of lamb and sirloin steak. Spectacular sunset views.",
+          "image": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_1468-1024x768.jpeg",
+          "matterport": "4tziHsYEVxc"
+        },
+        {
+          "name": "Vista",
+          "type": "Italian",
+          "hours": "Dinner",
+          "included": true,
+          "dress": "Smart",
+          "desc": "Regional Italian favourites crafted with authentic ingredients. Caprese salad or meatballs to start, creamy pasta or hearty meat dishes for mains, then a classic Italian cheese platter or tiramisu trio to finish. Walk-in only — arrive before 7pm to avoid the wait.",
+          "image": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_0318-1024x768.jpeg",
+          "matterport": "FhVeer8VSc3"
+        },
+        {
+          "name": "Nonna’s",
+          "type": "Italian Pizza & Pasta",
+          "hours": "Lunch & dinner",
+          "included": true,
+          "dress": "Casual",
+          "desc": "Freshly made-to-order pizza and pasta take centre stage. In the evening, a three-course experience rounds off with focaccia, silky tiramisu, and creamy panna cotta.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/1280px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"
+        },
+        {
+          "name": "The Kitchens",
+          "type": "Food Hall",
+          "hours": "Breakfast, lunch & dinner",
+          "included": true,
+          "dress": "Casual",
+          "desc": "A food hall for breakfast, then eight different eateries put their best dishes forward for lunch and dinner. Highlights: roast dinners at Gravy Boat, Asian curries at Banyan Leaf, Greek-style pittas at Athenas. Late-night snack menu available.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1280px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+        },
+        {
+          "name": "Snack Shack",
+          "type": "Poolside Grab & Go",
+          "hours": "Lunch & snacks",
+          "included": true,
+          "dress": "Beachwear welcome",
+          "desc": "Food stalls and beach huts set the scene. Grab-and-go lunches — sandwiches, salads, chicken wings, burgers, and hot dogs. A drinks station is on hand too. Ideal on port days when you want something quick before heading out.",
+          "image": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/5776ee72-e97e-4edd-8456-f7fd3f7351d4/IMG_6568.jpeg",
+          "matterport": "PoSCdbn3cYQ"
+        },
+        {
+          "name": "Abuela’s",
+          "type": "Mexican",
+          "hours": "Lunch & dinner",
+          "included": true,
+          "dress": "Casual",
+          "desc": "The only Mexican restaurant in the entire Marella fleet. Nachos and chilli for lunch, then tacos, burritos, and churros for dinner — all made with authentic ingredients.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/1280px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg"
+        },
+        {
+          "name": "Piccadilly’s",
+          "type": "British",
+          "hours": "Dinner",
+          "included": true,
+          "dress": "Smart",
+          "desc": "Classic British comforts with sea views. Pork sharing board or smoked salmon roulade to start, then roast dinner or tikka curry pie, and rice pudding or sorbet to finish. A little taste of home, afloat.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sunday_roast_-_roast_beef_1.jpg/1280px-Sunday_roast_-_roast_beef_1.jpg"
+        },
+        {
+          "name": "Kora La",
+          "type": "Pan-Asian · Speciality",
+          "hours": "Dinner",
+          "included": false,
+          "cover": "~£27pp",
+          "dress": "Smart",
+          "desc": "Pan-Asian speciality by celebrity chef Ian Pengelley. Gyozas, dumplings, spring rolls, and speciality curries. Standout dishes: duck & watermelon salad, Indian spiced king prawns, Indonesian beef rendang. Book on day one — it fills up fast.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Thai_food_2.jpg/1280px-Thai_food_2.jpg"
+        },
+        {
+          "name": "Surf & Turf",
+          "type": "Steakhouse · Speciality",
+          "hours": "Dinner",
+          "included": false,
+          "cover": "~£32pp",
+          "dress": "Smart",
+          "desc": "Leather booths and 28-day-aged steaks. Kick off with the Turf Sharing Board or king scallops, then lamb chops, lobster, or the signature steak. Pair with lobster macaroni cheese or truffle mash. Consistently rated as worth every penny.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Carnivore_Restaurant_meal.jpg/1280px-Carnivore_Restaurant_meal.jpg",
+          "matterport": "ViJp3WXaeqL",
+          "menuLink": "https://content.tui.co.uk/adamtui/2023_6/19_8/861bcd06-a885-4e24-bd5c-b02600924557/Voyager_SurfTurf_Menu.pdf"
+        },
+        {
+          "name": "Silver Fork",
+          "type": "Fine Dining · Speciality",
+          "hours": "Dinner (pre-book)",
+          "included": false,
+          "dress": "Smart",
+          "desc": "Celebrating the best of British cuisine. Choose a three-course à la carte or a seven-course tasting menu paired with a flight of wine. Also hosts The Great Musical Afternoon Tea weekly — West End–inspired dishes, cocktail included. Whole party must book the same menu.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Dessert_table.jpg/1280px-Dessert_table.jpg"
+        },
+        {
+          "name": "Umi Sushi",
+          "type": "Japanese · Speciality",
+          "hours": "Dinner",
+          "included": false,
+          "dress": "Smart",
+          "desc": "Watch your food come to life at this sushi bar. Freshly made ramen, sushi boxes, and hot bites like katsu chicken wings and soft bao buns. A charge applies — a must for sushi lovers.",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/1280px-Sushi_platter.jpg"
+        }
+      ],
+      "diningTips": [
+        "Vista is walk-in only with no reservations — arrive before 7pm to get a table. At peak times waits can hit 45 minutes",
+        "Book Kora La on day one — it’s consistently the most popular speciality restaurant and fills up fast",
+        "Kora La (~£27pp), Surf & Turf (~£32pp), Silver Fork, and Umi Sushi have cover charges; these are 2023 prices so confirm onboard. All other restaurants are fully included",
+        "No assigned tables or set mealtimes in Latitude 53 — the dinner menu changes nightly so there’s always something new. Watch for the ‘Treat Yourself’ dishes",
+        "The Kitchens has a late-night snack menu — great if you’re peckish after a show",
+        "Abuela’s is the only Mexican restaurant in the fleet — don’t miss the tacos and churros",
+        "Snack Shack is ideal on port days — quick poolside grab-and-go without the wait of a full restaurant"
+      ],
+      "diningImages": [
+        {
+          "url": "https://content.tui.co.uk/adamtui/2018_7/16_14/b821f087-3264-48dd-81f4-a91f00e795a5/CRU_EXP_18_F168_Latitude_53WebOriginalCompressed.jpg",
+          "caption": "Latitude 53 — bao buns"
+        },
+        {
+          "url": "https://content.tui.co.uk/adamtui/2019_8/7_11/2653c35f-d100-44e0-a9ab-aaa200c5aada/CRU_EXPLORER2_F130_VistaWebOriginalCompressed.jpg",
+          "caption": "Vista — Italian cuisine"
+        },
+        {
+          "url": "https://content.tui.co.uk/adamtui/2018_7/16_13/1145d533-5632-4739-8436-a91f00e2282d/CRU_EXP_18_F180_Snack_ShackWebOriginalCompressed.jpg",
+          "caption": "Snack Shack — poolside dining"
+        },
+        {
+          "url": "https://content.tui.co.uk/adamtui/2018_7/16_13/74afa0c6-bf2c-4a11-9a5d-a91f00e59257/CRU_EXP_18_F187_Surf_and_TurfWebOriginalCompressed.jpg",
+          "caption": "Surf & Turf — steakhouse"
+        },
+        {
+          "url": "https://content.tui.co.uk/adamtui/2018_7/16_14/3612a8a6-e4d3-42ff-adc8-a91f00e7a51a/CRU_EXP_18_F228_Squid_and_AnchorWebOriginalCompressed.jpg",
+          "caption": "Squid & Anchor — British pub"
+        },
+        {
+          "url": "https://content.tui.co.uk/adamtui/2019_5/1_7/59e6cd22-43ce-4076-8aea-aa400080d019/ACC_150015_CRU_EXPLORER2_F015_FlutesWebOriginalCompressed.jpg",
+          "caption": "Flutes — champagne bar"
+        }
+      ],
+      "entertainmentVenues": [
+        {
+          "name": "Broadway Show Lounge",
+          "category": "Theatre & Shows",
+          "deck": "Deck 6 & 7",
+          "tags": [
+            "Nightly",
+            "2 shows per evening",
+            "Included"
+          ],
+          "icon": "🎭",
+          "desc": "West End–scale theatre with up to 12 all-singing, all-dancing productions on a 14-night sailing — six shows on a 7-night cruise, with eight created exclusively for Marella Voyager. Start with a welcome drink, then sit back and enjoy the show.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Squid & Anchor",
+          "category": "British Pub",
+          "deck": "Deck 7",
+          "tags": [
+            "Live bands",
+            "Quizzes & gameshows",
+            "Included"
+          ],
+          "icon": "🍺",
+          "desc": "A traditional British pub, styled and stocked to match. Live bands and musicians every evening, plus interactive quiz nights and gameshows. Great craic, great atmosphere — one of the social hubs of the ship.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Electric Rooms",
+          "category": "Bar, Club & Casino",
+          "deck": "Deck 12",
+          "tags": [
+            "Nightclub",
+            "Casino",
+            "Silent discos",
+            "Included"
+          ],
+          "icon": "🎲",
+          "desc": "When night falls, the Electric Rooms comes alive. Hit the LED-lit dancefloor, grab a drink from the bar, or try your luck at the casino — blackjack, roulette, and slot machines all feature. The late-night spot for dancing and gambling.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Exchange",
+          "category": "Speakeasy Bar",
+          "deck": "Deck 8",
+          "tags": [
+            "Adults only",
+            "Pre-bookable",
+            "Chargeable"
+          ],
+          "icon": "🥂",
+          "desc": "A hidden-away adults-only speakeasy with a cocktail menu you won’t find anywhere else on the ship. Live music every evening, and on specific nights a full immersive 1920s-inspired experience takes centre stage. Pre-book — and dress the part.",
+          "image": "placeholder",
+          "extra": "Chargeable"
+        },
+        {
+          "name": "Flutes",
+          "category": "Champagne & Prosecco Bar",
+          "deck": "Deck 5",
+          "tags": [
+            "Pianist",
+            "Push for bubbles buttons",
+            "Prosecco included"
+          ],
+          "icon": "🥂",
+          "desc": "If you’re after something bubbly, Flutes is the bar for you. Sip cold Champagne or Prosecco to the sounds of a pianist, across two floors. The ‘push for bubbles’ buttons are a highlight. Note: Champagne is chargeable — Prosecco is included.",
+          "image": "placeholder",
+          "extra": "Champagne chargeable"
+        },
+        {
+          "name": "The Arts House",
+          "category": "Art-themed Bar",
+          "deck": "Deck 6",
+          "tags": [
+            "Unique to Voyager",
+            "Shuffleboard",
+            "Live music evenings",
+            "Included"
+          ],
+          "icon": "🎨",
+          "desc": "A bar unique to Marella Voyager. By day: shuffleboard and arts & crafts activities. By night: sip cocktails while listening to live singers and musicians in a beautifully decorated art-gallery setting.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Summer House",
+          "category": "Bar & Live Music",
+          "deck": "Deck 11",
+          "tags": [
+            "Retractable roof",
+            "Live singers",
+            "Mexican cocktails",
+            "Included"
+          ],
+          "icon": "🌴",
+          "desc": "Nestled between Nonna’s and Abuela’s with a retractable roof and open-air area offering panoramic views. Mexican cocktails and cold beers by day. Live singers and musicians in the evening — a brilliant spot for a sundowner.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Aperitif",
+          "category": "Pre-dinner Bar",
+          "deck": "Deck 7",
+          "tags": [
+            "Specialist gin & whiskey menus",
+            "Premium spirits",
+            "Included"
+          ],
+          "icon": "🍸",
+          "desc": "Nestled between the speciality restaurants, Aperitif is the perfect pre-dinner or post-meal spot. Prosecco, premium spirits, and specialist gin and whiskey menus. A sophisticated and relaxed bar with a great location.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Shack",
+          "category": "Pool Deck Bar",
+          "deck": "Deck 12",
+          "tags": [
+            "Frozen cocktails",
+            "Piña coladas",
+            "Included"
+          ],
+          "icon": "🍹",
+          "desc": "Overlooking the pool deck, The Shack serves soft drinks, classic alcoholic options, and frozen cocktails — including the ever-popular piña colada. The go-to bar for a refreshing drink between dips in the pool.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Cinema",
+          "category": "Indoor Cinema",
+          "deck": "Deck 6",
+          "tags": [
+            "Hollywood classics",
+            "Latest releases",
+            "Daytime & evening",
+            "Included"
+          ],
+          "icon": "🎬",
+          "desc": "An indoor cinema screening a variety of Hollywood classics and the latest box office releases throughout the day, with evening screenings too. A great option for sea days or when you fancy a couple of hours out of the sun.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Movies by Moonlight",
+          "category": "Open-air Cinema",
+          "deck": "Deck 11",
+          "tags": [
+            "Under the stars",
+            "Classic & latest films",
+            "Included"
+          ],
+          "icon": "🌙",
+          "desc": "Our open-air cinema on the pool deck — the perfect way to end an evening. Settle in under the stars with a bag of popcorn and a hot chocolate, and enjoy classic films or the latest box office hits on the big screen.",
+          "image": "placeholder"
+        }
+      ],
+      "shipFacilities": [
+        {
+          "name": "Pool Deck",
+          "category": "Pool & Sun",
+          "deck": "Deck 11",
+          "tags": [
+            "Main pool",
+            "Daily entertainment",
+            "Included"
+          ],
+          "icon": "🏊",
+          "desc": "The social hub of the ship. A large swimming pool with a full daily entertainment schedule — expect pool games, aqua aerobics, trivia, and the famous Sail Away Party on night one. Surrounded by sun loungers with a pool bar right next to it.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Whirlpools",
+          "category": "Pool & Relaxation",
+          "deck": "Deck 11",
+          "tags": [
+            "Two whirlpools",
+            "Water jets",
+            "Included"
+          ],
+          "icon": "♨️",
+          "desc": "Two whirlpools sit right next to the outdoor pool, each fitted with powerful water jets — perfect for muscle-melting dips after a busy port day. Popular spots to unwind and watch the sea go by.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Oceans Spa & Beauty Salon",
+          "category": "Spa & Wellness",
+          "deck": "Deck 11",
+          "tags": [
+            "Thermal suite",
+            "Treatments",
+            "Sauna & steam",
+            "Chargeable"
+          ],
+          "icon": "💆",
+          "desc": "An impressive menu of treatments: rejuvenating facials, manicures, relaxing massages — all available in solo and couples’ rooms. Full-service beauty salon for hair and makeup. Thermal area with heated loungers, steam rooms, and sauna. Treatments and facilities are chargeable.",
+          "image": "placeholder",
+          "extra": "Chargeable"
+        },
+        {
+          "name": "The Veranda",
+          "category": "Adults-only Terrace",
+          "deck": "Front of ship",
+          "tags": [
+            "Adults only",
+            "Luxury sunbeds",
+            "First-class views"
+          ],
+          "icon": "🌅",
+          "desc": "An adults-only terrace at the bow of the ship with luxury sunbeds and stunning first-class sea views. Cabanas are available for a hire charge if you want a private retreat. Peaceful, quiet, and utterly relaxing.",
+          "image": "placeholder",
+          "extra": "Cabanas chargeable"
+        },
+        {
+          "name": "Oceans Gym",
+          "category": "Fitness",
+          "deck": "Deck 11",
+          "tags": [
+            "Sea views",
+            "Cardio & weights",
+            "Included"
+          ],
+          "icon": "💪",
+          "desc": "A well-equipped gym with sea views, featuring strength-training gear, cardio machines, and everything you need for a full-body workout. Classes also available. A jogging track runs around the top deck for those who prefer the fresh air.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Jogging Track",
+          "category": "Fitness",
+          "deck": "Top deck",
+          "tags": [
+            "Sea views",
+            "Fresh air",
+            "Included"
+          ],
+          "icon": "🏃",
+          "desc": "The jogging track circles the very top of the ship, giving you some of the best sea views on board while you get your steps in. A great way to start the morning before the sun gets too hot.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Minigolf",
+          "category": "Activities",
+          "deck": "Top deck",
+          "tags": [
+            "All ages",
+            "Included"
+          ],
+          "icon": "⛳",
+          "desc": "Work on your putting skills with a round of crazy golf at the very top of the ship. Open to all ages and a fun way to spend an hour at sea — competitive family battles welcome.",
+          "image": "placeholder"
+        },
+        {
+          "name": "M Club",
+          "category": "Kids Club (ages 3–11)",
+          "deck": "Onboard",
+          "tags": [
+            "Ages 3–11",
+            "Daily programme",
+            "Evening activities",
+            "Included"
+          ],
+          "icon": "🎡",
+          "desc": "Little ones will love the M Club, hosted by the M Crew — Marella’s own cast of characters. A packed daily activity programme, plus evening events including movie nights and pizza-making sessions. Qualified hosts throughout.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Mini M Club",
+          "category": "Baby & Toddler Club (0–3 yrs)",
+          "deck": "Onboard",
+          "tags": [
+            "Ages 6 months–3 years",
+            "Soft play",
+            "Qualified hosts",
+            "Included"
+          ],
+          "icon": "🧸",
+          "desc": "Babies and toddlers have their own dedicated space with soft play, story time, sensory toys, and arts & crafts. All activities are hosted by qualified M Club staff. A chance for parents to have a little time to themselves too.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Hideout",
+          "category": "Teen Hangout",
+          "deck": "Onboard",
+          "tags": [
+            "Teens & older kids",
+            "Games consoles",
+            "Organised events",
+            "Included"
+          ],
+          "icon": "🎮",
+          "desc": "The Hideout is made for teens and older kids — loaded with games consoles and comfy chairs. In high season, it hosts a variety of organised games and events. A space to relax, meet other young cruisers, and escape the adults.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Gamer Zone",
+          "category": "Gaming",
+          "deck": "Onboard",
+          "tags": [
+            "All ages",
+            "Consoles & retro machines",
+            "Included"
+          ],
+          "icon": "🕹️",
+          "desc": "Fully stocked with games consoles and retro arcade machines — open to all ages. Whether you’re 10 or 60, the Gamer Zone is a great way to spend a sea day. Guaranteed family competition.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Kids’ Pool",
+          "category": "Pool & Water",
+          "deck": "Deck 11",
+          "tags": [
+            "Younger cruisers",
+            "Safe splash area",
+            "Included"
+          ],
+          "icon": "🚿",
+          "desc": "A dedicated dipping pool reserved for younger cruisers — the perfect size for a cool-down splash. Positioned near the main pool so parents can keep an eye on everyone at once.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Coffee Port",
+          "category": "Café",
+          "deck": "Onboard",
+          "tags": [
+            "Lavazza coffee",
+            "In-house chocolatier",
+            "PAI included"
+          ],
+          "icon": "☕",
+          "desc": "Lavazza coffee, teas, and hot and cold drinks served all day, plus sweets from the ship’s in-house chocolatier. A perfect people-watching spot or quiet retreat with a good book. Evening coffee-inspired cocktails available. Included under Premium All Inclusive — small charge for other packages.",
+          "image": "placeholder",
+          "extra": "Included with Premium AI"
+        },
+        {
+          "name": "Broad Street Shops",
+          "category": "Duty-free Shopping",
+          "deck": "Onboard",
+          "tags": [
+            "Duty-free",
+            "Open at sea",
+            "Perfume & jewellery"
+          ],
+          "icon": "🛍️",
+          "desc": "When the ship is at sea, it’s time to hit the shops. The onboard boutiques carry everyday essentials and a full range of duty-free products — perfume, jewellery, souvenirs, and more.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Pool Bar",
+          "category": "Pool Deck Bar",
+          "deck": "Deck 11",
+          "tags": [
+            "Next to main pool",
+            "Frozen cocktails",
+            "Included"
+          ],
+          "icon": "🍹",
+          "desc": "The Pool Bar sits right next to the main pool on Deck 11 — the ideal spot to grab drinks and frozen cocktails between sunbathing sessions without having to go far from your sun lounger.",
+          "image": "placeholder"
+        }
+      ]
+    }
+  },
+  "checklist": [
+    {
+      "title": "Passports",
+      "desc": "Must be less than 10 years old and valid for at least 3 months after your return. Some cruise destinations may need 6 months validity — check yours now!"
+    },
+    {
+      "title": "Cruise Control",
+      "desc": "Log into Cruise Control to provide passport info, check in for the cruise, book excursions, and print boarding passes."
+    },
+    {
+      "title": "Luggage tags",
+      "desc": "Print your Marella Cruises luggage tags from Cruise Control before you travel — you’ll need them at the airport."
+    },
+    {
+      "title": "Travel insurance",
+      "desc": "It’s a condition of booking — make sure everyone is covered."
+    },
+    {
+      "title": "Hand luggage essentials",
+      "desc": "There may be a delay getting cases to your cabin, so pack anything you need immediately in your hand luggage."
+    },
+    {
+      "title": "EES (Entry/Exit System)",
+      "desc": "The EU’s new electronic border system is rolling out — your first entry may take slightly longer at passport control. Bring extra water for the airport just in case."
+    },
+    {
+      "title": "Sustainable Tourism Tax",
+      "desc": "A small per-person, per-night levy applies during the hotel stay in Majorca. It’s payable locally at the hotel.",
+      "boyleOnly": true
+    }
+  ],
+  "flights": [
+    {
+      "type": "Outbound",
+      "date": "11 Jul",
+      "route": "BHD to PMI",
+      "from": "BHD",
+      "to": "PMI",
+      "flight": "BA4519",
+      "departure": "14:30",
+      "arrival": "18:10",
+      "airline": "British Airways"
+    },
+    {
+      "type": "Return - Ferrises",
+      "date": "18 Jul",
+      "route": "PMI to BHD",
+      "from": "PMI",
+      "to": "BHD",
+      "flight": "BA4520",
+      "departure": "19:00",
+      "arrival": "21:05",
+      "airline": "British Airways"
+    },
+    {
+      "type": "Return - Boyles",
+      "date": "25 Jul",
+      "route": "PMI to BHD",
+      "from": "PMI",
+      "to": "BHD",
+      "flight": "BA4520",
+      "departure": "11:45",
+      "arrival": "13:40",
+      "airline": "British Airways"
+    }
+  ]
+}

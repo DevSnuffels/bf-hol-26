@@ -1,16 +1,24 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
+import PasswordGate from "../components/PasswordGate";
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "900"],
+  style: ["normal", "italic"],
+});
+
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Hello World",
-  description: "A simple hello world message",
+  title: "Boyle Family — Mediterranean 2026",
+  description: "The Boyle Family Holiday Guide — Treasures of the Mediterranean, Summer 2026",
 };
 
 export default function RootLayout({
@@ -21,9 +29,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jetbrainsMono.variable} h-full antialiased`}
+      className={`${playfair.variable} ${raleway.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <PasswordGate>{children}</PasswordGate>
+      </body>
     </html>
   );
 }
