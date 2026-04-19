@@ -1,0 +1,287 @@
+{
+  "cruise": {
+    "ship": "Marella Explorer",
+    "route": "Treasures of the Mediterranean",
+    "embarkation": "11 Jul 2026",
+    "disembarkation": "18 Jul 2026",
+    "duration": "7 Nights",
+    "board": "Premium All Inclusive",
+    "embarkationNote": "Palma Port, Cruise Terminal, Estacio Maritima. Latest ship check-in is two hours before sailing time. The ship departs at 22:00 on the first evening.",
+    "shipTourVideo": "P2Ejrfr27xA",
+    "ports": [
+      {
+        "day": 1,
+        "date": "Saturday 11 July",
+        "port": "Palma, Majorca",
+        "time": "Departing 22:00",
+        "highlight": true,
+        "description": "Board the ship, settle into your cabin, and wave goodbye to Palma as we set sail into the sunset.",
+        "excursions": []
+      },
+      {
+        "day": 2,
+        "date": "Sunday 12 July",
+        "port": "At Sea",
+        "description": "A full day to explore the ship, lounge by the pool, catch a show, or simply relax with a cocktail on deck.",
+        "excursions": []
+      },
+      {
+        "day": 3,
+        "date": "Monday 13 July",
+        "port": "Olbia, Sardinia",
+        "time": "08:00 \u2013 14:00",
+        "description": "Crystal-clear waters and the rugged beauty of Sardinia\u2019s Emerald Coast. Wander the old town or hit the beach.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Cala_Goloritz%C3%A9_%28spiaggia%29.jpg",
+        "excursions": [
+          {
+            "families": ["boyle", "ferris"],
+            "label": "Both Families",
+            "name": "Discover Sardinia",
+            "duration": "5 hours \u00b7 Everyone",
+            "description": "Wind your way into the hilly, village-speckled interior of Sardinia \u2014 past cork forests, vineyards, and olive groves. First stop is Aggius, one of the oldest villages on the island, where you\u2019ll explore an ethnographic museum filled with traditional costumes and hand-woven fabrics. Then on to Tempio, a beautiful ancient village with cobbled streets, a Baroque cathedral, artisan shops, and Italian fashion boutiques. Grab a handmade pasta lunch at a family-run trattoria before heading back to the coast. A proper taste of the real Sardinia.",
+            "images": [
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Aggius_panorama.jpg/1280px-Aggius_panorama.jpg", "caption": "Aggius \u2014 ancient granite village in the Gallura hills" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Tempio_Pausania_-_view.JPG/1280px-Tempio_Pausania_-_view.JPG", "caption": "Tempio Pausania \u2014 the city of stone" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tempio_Pausania%2C_chiesa_di_San_Pietro_%2808%29.jpg/1280px-Tempio_Pausania%2C_chiesa_di_San_Pietro_%2808%29.jpg", "caption": "Cathedral of San Pietro, Tempio Pausania" }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "date": "Tuesday 14 July",
+        "port": "Naples, Italy",
+        "time": "07:00 \u2013 17:00",
+        "description": "Gateway to Pompeii and the isle of Capri. Try authentic Neapolitan pizza, explore ancient ruins, or take a boat across to the stunning Blue Grotto.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg/1280px-Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+        "excursions": [
+          {
+            "families": ["boyle"],
+            "label": "Boyle Family",
+            "name": "Pompeii & Herculaneum",
+            "duration": "All 4 Boyles",
+            "description": "A real history blockbuster \u2014 two ancient Roman cities frozen in time by the eruption of Mount Vesuvius in 79 AD. Walk through the streets of Pompeii, where you\u2019ll see preserved houses, temples, baths, and even a Roman fast-food counter still etched into the stone. Then head to Herculaneum, a smaller but even better-preserved site where wooden furniture, mosaics, and food have survived beneath the volcanic mud. It\u2019s like stepping back 2,000 years \u2014 absolutely jaw-dropping.",
+            "images": [
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pompeii_Forum.JPG/1280px-Pompeii_Forum.JPG", "caption": "Pompeii Forum with Mount Vesuvius beyond" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Pompeya.Anfiteatro_y_palestra_retouched.jpg/1280px-Pompeya.Anfiteatro_y_palestra_retouched.jpg", "caption": "The Amphitheatre of Pompeii" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Herculaneum_Road_in_2015.jpg/1280px-Herculaneum_Road_in_2015.jpg", "caption": "Perfectly preserved Roman street \u2014 Herculaneum" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Herculaneum_Columns_in_2015.jpg/1280px-Herculaneum_Columns_in_2015.jpg", "caption": "Still-standing columns at Herculaneum" }
+            ],
+            "video": "77Ul5OMqdIA"
+          },
+          {
+            "families": ["ferris"],
+            "label": "Ferris Family",
+            "name": "Pompeii & Mount Vesuvius",
+            "duration": "Marion, Roisin & Connor",
+            "description": "The same incredible walk through the ancient streets of Pompeii, but instead of Herculaneum, the Ferris family heads up Mount Vesuvius itself \u2014 the only active volcano on mainland Europe you can actually climb. Hike to the crater rim and peer down into the belly of the beast, with sweeping views across the Bay of Naples. Combine that with the eerie, awe-inspiring ruins below and it\u2019s an unforgettable day.",
+            "images": [
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pompeii_Forum.JPG/1280px-Pompeii_Forum.JPG", "caption": "Pompeii Forum \u2014 2,000 years frozen in time" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Il_cratere_del_Vulcano_-_panoramio.jpg/1280px-Il_cratere_del_Vulcano_-_panoramio.jpg", "caption": "The crater of Mount Vesuvius" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_crater_of_Vesuvius_in_2012_%28composite_photograph%29.jpg/1280px-The_crater_of_Vesuvius_in_2012_%28composite_photograph%29.jpg", "caption": "Looking down into Vesuvius \u2014 the only active volcano on mainland Europe you can climb" }
+            ],
+            "video": "77Ul5OMqdIA"
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "date": "Wednesday 15 July",
+        "port": "Civitavecchia (Rome), Italy",
+        "time": "07:00 \u2013 19:00",
+        "description": "A full 12 hours \u2014 enough time to visit the Colosseum, toss a coin in the Trevi Fountain, or simply soak in the eternal city\u2019s atmosphere.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1280px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+        "excursions": [
+          {
+            "families": ["boyle"],
+            "label": "Boyle Family",
+            "name": "Rome Explorer",
+            "duration": "10 hours \u00b7 All 4 Boyles",
+            "description": "A full day in the Eternal City \u2014 and you\u2019ll need every minute. Coach from the port into the heart of Rome to see the Colosseum, where gladiators once fought in front of 50,000 spectators. Walk past the Roman Forum and Palatine Hill, toss a coin in the Trevi Fountain, marvel at the Pantheon, and stroll past the Spanish Steps. After lunch at a traditional Italian restaurant, cross into Vatican City to see St Peter\u2019s Square and Basilica \u2014 one of the most beautiful spots on earth. Ten hours of pure wonder.",
+            "images": [
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg", "caption": "The Colosseum \u2014 once home to 50,000 spectators" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg", "caption": "Trevi Fountain \u2014 toss your coin and wish" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1280px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg", "caption": "St Peter\u2019s Square, Vatican City" }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 6,
+        "date": "Thursday 16 July",
+        "port": "Ajaccio, Corsica",
+        "time": "09:00 \u2013 15:00",
+        "description": "Napoleon\u2019s birthplace, with colourful markets, stunning mountain backdrops, and beautiful beaches just a short ride from the port.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Port_Tino_Rossi_-_Ajaccio_%2815148706455%29.jpg/1280px-Port_Tino_Rossi_-_Ajaccio_%2815148706455%29.jpg",
+        "excursions": [
+          {
+            "families": ["boyle"],
+            "label": "Boyle Family",
+            "name": "Flavours & Footsteps of Imperial Ajaccio",
+            "duration": "2.5 hours \u00b7 All 4 Boyles",
+            "description": "A walking tour through Napoleon\u2019s birthplace, tracing his story from the house where he was born to the cathedral where he was baptised. Wander tree-lined boulevards, peek into the charming Corsican food market at Place de Gaulle \u2014 think local cheeses, charcuterie, honey, and wines \u2014 and sample some of the island\u2019s bold, rustic flavours along the way. A short and sweet morning that leaves plenty of time for the beach or a wander afterwards.",
+            "images": [
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ajaccio_MN1JPG.jpg/1280px-Ajaccio_MN1JPG.jpg", "caption": "Maison Bonaparte \u2014 where Napoleon was born in 1769" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/NapoleonBirth.jpg/1280px-NapoleonBirth.jpg", "caption": "Napoleon\u2019s birth room inside the museum" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Port_Ajaccio.JPG/1280px-Port_Ajaccio.JPG", "caption": "Ajaccio \u2014 colourful harbour and old town" }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 7,
+        "date": "Friday 17 July",
+        "port": "Palam\u00f3s, Spain",
+        "time": "09:00 \u2013 17:00",
+        "description": "A charming Costa Brava fishing town famous for its prawns, golden beaches, and a gorgeous medieval old quarter.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Palam%C3%B3s_2.jpg",
+        "excursions": [
+          {
+            "families": ["boyle", "ferris"],
+            "label": "Both Families",
+            "name": "Mini Train & Medieval Villages",
+            "duration": "Everyone",
+            "description": "All aboard a little tourist train for a scenic ride through the stunning Costa Brava countryside. You\u2019ll wind through charming medieval villages with narrow cobbled streets, ancient stone archways, and gorgeous views over terracotta rooftops to the sea. Stop to explore the old quarters, browse artisan shops, and soak in that golden Spanish light. It\u2019s relaxed, picturesque, and the perfect way to spend the last port day together before heading back to the ship.",
+            "images": [
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Pals.JPG/1280px-Pals.JPG", "caption": "Pals \u2014 a stunning medieval village on the Costa Brava" },
+              { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pals.jpg/1280px-Pals.jpg", "caption": "Cobblestone streets and stone archways, Pals" }
+            ]
+          }
+        ]
+      },
+      {
+        "day": 8,
+        "date": "Saturday 18 July",
+        "port": "Palma, Majorca",
+        "time": "Arriving 06:00",
+        "highlight": true,
+        "description": "Back to Palma \u2014 time to say goodbye to the ship and head to the resort for week two!",
+        "excursions": []
+      }
+    ],
+    "lifeonboard": {
+      "intro": "The Marella Explorer is a mid-sized cruise ship carrying around 1,830 passengers \u2014 big enough to pack in loads of restaurants, bars, and entertainment, but small enough that you\u2019ll quickly feel at home. The vibe is relaxed and friendly, with a distinctly British feel. Think cocktails by the pool by day, West End\u2013style shows by night, and no shortage of places to eat in between.",
+      "inclusiveNote": "Everyone is on Premium All Inclusive, which means meals in all included restaurants, plus a wide selection of drinks \u2014 wines, beers, spirits, cocktails, Prosecco, and soft drinks \u2014 all covered. There\u2019s really no need to worry about tabs.",
+      "facilityVideos": [
+        { "id": "UxMY9q2FVKA", "title": "Marella Explorer Ship Tour (with tips)", "desc": "A full walkthrough of the ship with handy tips from someone who\u2019s done the cruise \u2014 filmed in 2025." },
+        { "id": "a5UFXB9ZrSE", "title": "Complete Cruise Ship Tour", "desc": "Deck-by-deck tour of all 13 passenger decks on the Marella Explorer." }
+      ],
+      "dining": [
+        { "name": "Latitude 53", "desc": "The grand main dining room, spread across two decks with floor-to-ceiling windows. Breakfast 6:30\u20139am, dinner 6\u20139pm (last entry 9pm). No assigned tables or set mealtimes \u2014 just turn up when it suits. The dinner menu changes nightly and repeats weekly. Spectacular sunset views." },
+        { "name": "Vista", "desc": "A gorgeous Italian restaurant on the upper floor of Latitude 53, with freshly made pasta and pizzas. Walk-in only \u2014 no reservations. Extremely popular; expect up to 45 minutes\u2019 wait at peak times. Arrive before 7pm for the best chance of a table. Worth it \u2014 try the mozzarella starter and tiramisu trio." },
+        { "name": "The Mediterranean", "desc": "Overlooking the stern, with freshly baked pizza from a wood-fired oven and made-to-order pasta. A brilliant spot for lunch." },
+        { "name": "The Marketplace", "desc": "The main buffet on Deck 11. Food displays at each station show exactly what\u2019s being served before you join the queue. Open all day and late-night 10pm\u2013midnight for curry, burgers, and chips." },
+        { "name": "Snack Shack", "desc": "Poolside beneath colourful beach-hut canopies. Cooked-to-order burgers, hot dogs, and fish & chips alongside a self-serve fridge of fresh salads and melon pots. Ideal on port days when you\u2019re heading out at lunchtime." },
+        { "name": "Kora La", "desc": "Pan-Asian speciality restaurant by celebrity chef Ian Pengelley. Standout dishes include duck & watermelon salad, Indian spiced king prawns, and Indonesian beef rendang curry \u2014 all with glowing reviews. Cover charge approx. \u00a327pp (2023 pricing, subject to change). Book on day one." },
+        { "name": "Surf & Turf", "desc": "The ship\u2019s steakhouse. Tender cuts, seafood, unlimited sides, and a full dessert menu \u2014 the Surf & Turf Sharing Board for Two is a highlight. Cover charge approx. \u00a332pp (2023 pricing, subject to change). Consistently rated as worth every penny." }
+      ],
+      "diningTips": [
+        "Vista is walk-in only with no reservations \u2014 arrive before 7pm to get a table. At peak times waits can hit 45 minutes, and all restaurants close at 9pm last entry",
+        "Book Kora La at the earliest opportunity on day one \u2014 it\u2019s consistently the most popular speciality restaurant and fills up fast",
+        "Kora La (~\u00a327pp) and Surf & Turf (~\u00a332pp) have cover charges; these are 2023 prices so confirm onboard. All other restaurants are fully included",
+        "No assigned tables or set mealtimes in Latitude 53 \u2014 the dinner menu changes nightly so there\u2019s always something new",
+        "The Marketplace is open late-night 10pm\u2013midnight for curry, burgers, and chips if you\u2019re peckish after a show",
+        "The Marketplace has food displays at each station so you can see exactly what\u2019s on before joining the queue",
+        "Snack Shack is ideal on excursion days \u2014 quick poolside grab-and-go without the wait of a full restaurant"
+      ],
+      "diningImages": [
+        { "url": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_1468-1024x768.jpeg", "caption": "Latitude 53 \u2014 bao buns" },
+        { "url": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_0472-1024x768.jpeg", "caption": "Latitude 53 \u2014 lemon dessert & trifle" },
+        { "url": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_0318-1024x768.jpeg", "caption": "Vista \u2014 mozzarella & arancini" },
+        { "url": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_0319-1024x768.jpeg", "caption": "Vista \u2014 spaghetti bolognese & gnocchi" },
+        { "url": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_0322-1024x768.jpeg", "caption": "Vista \u2014 tiramisu trio" },
+        { "url": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/1755167869520-576x768.jpg", "caption": "Snack Shack \u2014 fresh salads" },
+        { "url": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/5776ee72-e97e-4edd-8456-f7fd3f7351d4/IMG_6568.jpeg", "caption": "Snack Shack \u2014 poolside exterior" },
+        { "url": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/88768b61-fd2c-4e42-8643-64ec21bf9ee4/IMG_6707.jpeg", "caption": "Snack Shack \u2014 beach hut canopies" }
+      ],
+      "entertainment": [
+        { "name": "Broadway Show Lounge", "desc": "The ship\u2019s two-storey theatre with full-scale West End\u2013style shows, tribute acts, comedians, and a weekly crew show." },
+        { "name": "Squid & Anchor", "desc": "A proper British pub on Deck 7 with live bands, pub quizzes, karaoke nights, and an outdoor seating area." },
+        { "name": "The Lounge", "desc": "A stylish bar built around a bright pink grand piano, with live music every evening. Great for a pre-dinner cocktail." },
+        { "name": "Indigo Bar, Club & Casino", "desc": "Up on Deck 12 with 360-degree ocean views, a DJ, dance floor, cocktail-making sessions, and a casino. The late-night spot." },
+        { "name": "Cinema", "desc": "An indoor cinema on Deck 6 showing family-friendly films, with extra screenings during peak season." },
+        { "name": "Poolside Fun", "desc": "Daily activities run by the cruise team including trivia, bingo, ice-carving demos, aqua aerobics, pool games, and the famous Sail Away Party on the first night." }
+      ],
+      "spa": [
+        { "name": "Main Pool Deck", "desc": "Two connected pools on Deck 11 with a shallow wading area, surrounded by sun loungers across two levels. Whirlpool tubs and a kids\u2019 Splash Pad with a mini slide." },
+        { "name": "The Veranda", "desc": "An adults-only terrace at the front of the ship with Balinese daybeds and cocoon chairs. Quiet, noise-free zone with first-class views \u2014 perfect for a good book." },
+        { "name": "Champneys Spa", "desc": "The largest spa in the Marella fleet, with treatment rooms, a beauty salon, a relaxation room, a steam room, and an enormous sauna with floor-to-ceiling sea views." },
+        { "name": "Gym & Fitness", "desc": "A well-equipped gym with sea views, plus classes like yoga, Pil\u00e0tes, and circuits. A jogging track runs around Deck 12." }
+      ],
+      "kids": [
+        { "name": "Kids\u2019 Club", "desc": "Supervised sessions and activities for younger children." },
+        { "name": "The Hideout", "desc": "A hangout space for teens." },
+        { "name": "Gamer Zone", "desc": "Fully stocked with arcade games and machines." },
+        { "name": "Sports & Family Deck", "desc": "Mini golf, a multi-sports court for basketball and mini football, and table tennis." },
+        { "name": "Splash Pad", "desc": "A freshwater splash pool with a small slide, just behind the Kids\u2019 Club." },
+        { "name": "Movies by Moonlight", "desc": "Outdoor movie screenings on the big poolside screen in the evening." }
+      ]
+    }
+  },
+  "checklist": [
+    {
+      "title": "Passports",
+      "desc": "Must be less than 10 years old and valid for at least 3 months after your return. Some cruise destinations may need 6 months validity \u2014 check yours now!"
+    },
+    {
+      "title": "Cruise Control",
+      "desc": "Log into Cruise Control to provide passport info, check in for the cruise, book excursions, and print boarding passes."
+    },
+    {
+      "title": "Luggage tags",
+      "desc": "Print your Marella Cruises luggage tags from Cruise Control before you travel \u2014 you\u2019ll need them at the airport."
+    },
+    {
+      "title": "Travel insurance",
+      "desc": "It\u2019s a condition of booking \u2014 make sure everyone is covered."
+    },
+    {
+      "title": "Hand luggage essentials",
+      "desc": "There may be a delay getting cases to your cabin, so pack anything you need immediately in your hand luggage."
+    },
+    {
+      "title": "EES (Entry/Exit System)",
+      "desc": "The EU\u2019s new electronic border system is rolling out \u2014 your first entry may take slightly longer at passport control. Bring extra water for the airport just in case."
+    },
+    {
+      "title": "Sustainable Tourism Tax",
+      "desc": "A small per-person, per-night levy applies during the hotel stay in Majorca. It\u2019s payable locally at the hotel.",
+      "boyleOnly": true
+    }
+  ],
+  "flights": [
+    {
+      "type": "Outbound",
+      "date": "11 Jul",
+      "route": "BHD to PMI",
+      "from": "BHD",
+      "to": "PMI",
+      "flight": "BA4519",
+      "departure": "14:30",
+      "arrival": "18:10",
+      "airline": "British Airways"
+    },
+    {
+      "type": "Return - Ferrises",
+      "date": "18 Jul",
+      "route": "PMI to BHD",
+      "from": "PMI",
+      "to": "BHD",
+      "flight": "BA4520",
+      "departure": "19:00",
+      "arrival": "21:05",
+      "airline": "British Airways"
+    },
+    {
+      "type": "Return - Boyles",
+      "date": "25 Jul",
+      "route": "PMI to BHD",
+      "from": "PMI",
+      "to": "BHD",
+      "flight": "BA4520",
+      "departure": "11:45",
+      "arrival": "13:40",
+      "airline": "British Airways"
+    }
+  ]
+}

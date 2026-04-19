@@ -1,0 +1,66 @@
+{
+  "boyle": {
+    "name": "The Boyles",
+    "reference": "REF: 29361349",
+    "members": [
+      { "name": "Mark", "role": "Lead Passenger" },
+      { "name": "Marion" },
+      { "name": "Clodagh" },
+      { "name": "Meabh" }
+    ],
+    "cabin": {
+      "type": "Family Balcony Cabin with Suite Service",
+      "details": [
+        "20m\u00b2 cabin with furnished balcony",
+        "Double bed, sofa bed & fold-down bed \u2014 sleeps up to 5",
+        "En suite bathroom with shower",
+        "Nespresso coffee machine & tea-making facilities",
+        "Xbox 360 gaming console in the cabin"
+      ],
+      "perks": [
+        "Continental breakfast in bed (once per person per week)",
+        "Free pressing service for up to 3 items of clothing",
+        "Nespresso coffee machine, slippers, dressing gowns",
+        "Upgraded toiletries and pillow menu"
+      ],
+      "navigateNote": "Download the Marella Navigate app before you travel \u2014 you can use it onboard to check daily schedules, book speciality restaurants, and manage your excursion tickets. Everything in one place."
+    },
+    "hotel": {
+      "name": "TUI BLUE Sensatori Biomar",
+      "location": "Sa Coma, Majorca",
+      "stars": 5,
+      "checkIn": "18 Jul 2026",
+      "checkOut": "25 Jul 2026",
+      "room": "Select Junior Suite with Large Terrace",
+      "board": "All Inclusive",
+      "images": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/0d/20/40/caption.jpg?w=1000&h=-1&s=1",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/7b/07/2a/caption.jpg?w=1000&h=-1&s=1"
+      ],
+      "video": "Zg6ncvUcLz8"
+    },
+    "flights": {
+      "return": "25 Jul 2026"
+    }
+  },
+  "ferris": {
+    "name": "The Ferrises",
+    "members": [
+      { "name": "Roisin" },
+      { "name": "Connor" }
+    ],
+    "cabin": {
+      "type": "Interior Cabin",
+      "details": [
+        "Comfortable interior cabin",
+        "Details to be confirmed"
+      ],
+      "perks": [],
+      "navigateNote": "Download the Marella Navigate app before you travel \u2014 you can use it onboard to check daily schedules, book speciality restaurants, and manage your excursion tickets. Everything in one place."
+    },
+    "hotel": null,
+    "flights": {
+      "return": "18 Jul 2026"
+    }
+  }
+}
