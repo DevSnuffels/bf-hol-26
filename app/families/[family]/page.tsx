@@ -278,6 +278,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                           const excImages = 'images' in exc ? (exc as { images: { url: string; caption: string }[] }).images : [];
                           const excVideo = 'video' in exc ? (exc as { video?: string }).video : undefined;
                           const excNotes = 'notes' in exc ? (exc as { notes?: string[] }).notes : undefined;
+                          const excTips = 'tips' in exc ? (exc as { tips?: string[] }).tips : undefined;
                           return (
                             <div
                               key={excIdx}
@@ -354,6 +355,26 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                                       <li key={ni} className="text-xs flex items-start gap-2" style={{ color: '#4a5c6e' }}>
                                         <span className="flex-shrink-0 mt-0.5" style={{ color: 'var(--sunset)' }}>→</span>
                                         {note}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {/* Travel tips */}
+                              {excTips && excTips.length > 0 && (
+                                <div
+                                  className="mx-5 mb-4 rounded-xl p-4"
+                                  style={{ background: 'rgba(26,82,118,0.07)', borderLeft: '3px solid var(--ocean)' }}
+                                >
+                                  <p className="text-xs uppercase tracking-widest font-semibold mb-2" style={{ color: 'var(--ocean)' }}>
+                                    Travel tips
+                                  </p>
+                                  <ul className="space-y-1.5">
+                                    {excTips.map((tip, ti) => (
+                                      <li key={ti} className="text-xs flex items-start gap-2" style={{ color: '#4a5c6e' }}>
+                                        <span className="flex-shrink-0 mt-0.5" style={{ color: 'var(--ocean)' }}>✦</span>
+                                        {tip}
                                       </li>
                                     ))}
                                   </ul>
