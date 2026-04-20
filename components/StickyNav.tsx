@@ -76,7 +76,7 @@ export default function StickyNav({ items }: { items: NavItem[] }) {
           className="flex items-center justify-center gap-3 px-4 py-1.5"
           style={{ borderBottom: '1px solid rgba(10,22,40,0.06)' }}
         >
-          <span style={{ fontSize: '0.65rem', color: '#9aabb8', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: 'var(--font-raleway)' }}>
+          <span style={{ fontSize: '0.65rem', color: '#5a6e7e', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: 'var(--font-raleway)' }}>
             Departure in
           </span>
           {[{ v: days, u: 'days' }, { v: hours, u: 'hrs' }, { v: mins, u: 'min' }].map(({ v, u }) => (
@@ -84,7 +84,7 @@ export default function StickyNav({ items }: { items: NavItem[] }) {
               <span style={{ fontSize: '1rem', fontWeight: 700, fontVariantNumeric: 'tabular-nums', color: 'var(--navy)', fontFamily: 'var(--font-raleway)', lineHeight: 1 }}>
                 {pad(v)}
               </span>
-              <span style={{ fontSize: '0.55rem', color: '#9aabb8', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+              <span style={{ fontSize: '0.55rem', color: '#5a6e7e', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                 {u}
               </span>
             </div>

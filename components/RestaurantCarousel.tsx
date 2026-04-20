@@ -146,7 +146,7 @@ export default function RestaurantCarousel({ dining }: { dining: DiningItem[] })
         </button>
       </div>
 
-      <p className="text-center text-xs mt-2" style={{ color: '#9aabb8' }}>
+      <p className="text-center text-xs mt-2" style={{ color: '#5a6e7e' }}>
         {current + 1} of {dining.length} dining options
       </p>
     </div>

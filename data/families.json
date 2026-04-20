@@ -3,16 +3,25 @@
     "name": "The Boyles",
     "reference": "REF: 2XXXXXX9",
     "members": [
-      { "name": "Mark", "role": "Lead Passenger" },
-      { "name": "Sinead" },
-      { "name": "Clodagh" },
-      { "name": "Meabh" }
+      {
+        "name": "Mark",
+        "role": "Lead Passenger"
+      },
+      {
+        "name": "Sinead"
+      },
+      {
+        "name": "Clodagh"
+      },
+      {
+        "name": "Meabh"
+      }
     ],
     "cabin": {
       "type": "Family Balcony Cabin with Suite Service",
       "details": [
-        "20m\u00b2 cabin with furnished balcony",
-        "Double bed, sofa bed & fold-down bed \u2014 sleeps up to 5",
+        "20m² cabin with furnished balcony",
+        "Double bed, sofa bed & fold-down bed — sleeps up to 5",
         "En suite bathroom with shower",
         "Nespresso coffee machine & tea-making facilities",
         "Xbox 360 gaming console in the cabin"
@@ -22,12 +31,14 @@
         "Free pressing service for up to 3 items of clothing",
         "Nespresso coffee machine, slippers, dressing gowns",
         "Upgraded toiletries and pillow menu"
-      ],      "images": [
+      ],
+      "images": [
         "https://content.tui.co.uk/adamtui/2023_7/12_7/a29492d5-47dd-44c0-95a2-b03d0080c636/ACC_150016_MARELLA_VOYAGER_F180WebOriginalCompressed.jpg",
         "https://content.tui.co.uk/adamtui/2023_7/12_7/f9f87bd2-ee96-46b3-885c-b03d0080ca85/ACC_150016_MARELLA_VOYAGER_F181WebOriginalCompressed.jpg",
         "https://content.tui.co.uk/adamtui/2023_7/12_7/35467b09-244e-416c-b61b-b03d0080cfb7/ACC_150016_MARELLA_VOYAGER_F182WebOriginalCompressed.jpg",
         "https://content.tui.co.uk/adamtui/2023_7/12_7/01c3cf0f-d6fa-421c-a99e-b03d0080c1c5/ACC_150016_MARELLA_VOYAGER_F179WebOriginalCompressed.jpg"
-      ],      "navigateNote": "Download the Marella Navigate app before you travel \u2014 you can use it onboard to check daily schedules, book speciality restaurants, and manage your excursion tickets. Everything in one place."
+      ],
+      "navigateNote": "Download the Marella Navigate app before you travel — you can use it onboard to check daily schedules, book speciality restaurants, and manage your excursion tickets. Everything in one place."
     },
     "hotel": {
       "name": "TUI BLUE Sensatori Biomar",
@@ -41,18 +52,364 @@
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/31/0d/20/40/caption.jpg?w=1000&h=-1&s=1",
         "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/7b/07/2a/caption.jpg?w=1000&h=-1&s=1"
       ],
-      "video": "Zg6ncvUcLz8"
+      "video": "Zg6ncvUcLz8",
+      "diningNote": "All dining is included in your All Inclusive package, 24 hours a day. Dress code: Bermuda shorts or full-length trousers, polo shirt or T-shirt, and closed shoes — no beachwear, vest tops or sports clothing.",
+      "dining": [
+        {
+          "name": "Altair",
+          "type": "Buffet Restaurant",
+          "hours": "Breakfast, lunch & dinner",
+          "included": true,
+          "dress": "Smart casual",
+          "desc": "The main resort buffet with international cuisine and themed dinner nights. Separate kids' buffet with pizza, pasta and child-friendly favourites. Different theme every evening — a great way to try something new.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/buffet-restaurant-altair-protur-biomar-sensatori-resort-05.jpg"
+        },
+        {
+          "name": "Lyra",
+          "type": "Adults Buffet · Adults Zone",
+          "hours": "Breakfast, lunch & dinner",
+          "included": true,
+          "dress": "Smart casual",
+          "desc": "A quieter self-serve restaurant exclusively for adults, set in the ground floor of the main building. Perfect for a peaceful breakfast or a lazy lunch away from the family pool.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/restaurant-lyra-only-adults-protur-biomar-sensatori.jpg",
+          "extra": "Adults only"
+        },
+        {
+          "name": "La Toscana",
+          "type": "Italian À La Carte",
+          "hours": "Dinner only",
+          "included": true,
+          "dress": "Smart casual",
+          "desc": "Traditional Italian à la carte dining — pasta, risotto, and classic meat dishes. Reservation required. Hours subject to seasonal change.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/__la-toscana-restaurant-protur-biomar-sensatori-resort-hotel-spa-2.jpg"
+        },
+        {
+          "name": "Azafran",
+          "type": "Indian À La Carte",
+          "hours": "Dinner only",
+          "included": true,
+          "dress": "Smart casual",
+          "desc": "A wide range of Indian dishes from fragrant curries to tandoor classics. Reservation required — book early as it fills up fast.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/restaurante-azafran-indian-food-protur-biomar-sensatori-resort-3.jpg"
+        },
+        {
+          "name": "Restaurant Asian",
+          "type": "Oriental À La Carte",
+          "hours": "Dinner only",
+          "included": true,
+          "dress": "Smart casual",
+          "desc": "Oriental cuisine including teppanyaki dishes cooked in front of you and fresh sushi. A real experience as much as a meal. Reservation required.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/teppanyaki-restaurant-asian-protur-biomar-sensatori-resort-mallorca.jpg"
+        },
+        {
+          "name": "The Terrace Green & Grill",
+          "type": "Grill Restaurant",
+          "hours": "Lunch & dinner",
+          "included": true,
+          "dress": "Smart casual",
+          "desc": "Grilled meats and fish with terrace views. Unlimited snack service at lunch. Reservation required for dinner.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/snacks-restaurant-the-terrace-grenn-and-grill-protur-biomar-sensatori-resort-mallorca-sa-coma-proturhotels.jpg"
+        },
+        {
+          "name": "Thea's Coffee Shop",
+          "type": "Café",
+          "hours": "All day",
+          "included": true,
+          "dress": "Casual",
+          "desc": "Coffee, tea, pastries and snacks throughout the day. Perfect for a morning cappuccino or an afternoon pick-me-up.",
+          "image": "https://www.proturbiomargranhotel.com/files/theas-coffee-shop-protur-biomar-sensatori-resort-sa-coma-mallorca.jpg"
+        },
+        {
+          "name": "Naos Pool Bar",
+          "type": "Pool Bar",
+          "hours": "All day",
+          "included": true,
+          "dress": "Casual",
+          "desc": "Cocktails, soft drinks and ice cream served poolside. The go-to spot on a hot afternoon.",
+          "image": "https://www.proturbiomargranhotel.com/files/naos-pool-bar-protur-biomar-sensatori-resort-sa-coma-mallorca.jpg"
+        },
+        {
+          "name": "Carina Pool Bar",
+          "type": "Pool Bar · Adults Zone",
+          "hours": "All day",
+          "included": true,
+          "dress": "Casual",
+          "desc": "Adults-only pool bar with cocktails, drinks and a small selection of snacks. Quieter and more relaxed than the main pool area.",
+          "image": "https://www.proturbiomargranhotel.com/files/carina-pool-bar-protur-biomar-sensatori-resort.jpg",
+          "extra": "Adults only"
+        }
+      ],
+      "facilities": [
+        {
+          "name": "Family & Splash Pool",
+          "category": "Pools",
+          "tags": [
+            "400m²",
+            "Open 10:00–18:00",
+            "Aqua Fit sessions"
+          ],
+          "icon": "🏊",
+          "desc": "The main family pool covering 400m² with a swim-up bar so you never need to leave the water for a top-up. Active sessions like Aqua Fit run here too.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/_piscina-splash-protur-biomar-sensatori-resort.jpg"
+        },
+        {
+          "name": "Adult Pool & Jacuzzi",
+          "category": "Pools · Adults Zone",
+          "tags": [
+            "Adults only",
+            "Jacuzzi included"
+          ],
+          "icon": "🫧",
+          "desc": "A peaceful outdoor pool in the adults-only zone, with a Jacuzzi® alongside. Perfect for a quiet afternoon float.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/protur-biomar-sensatori-resort-02.jpg",
+          "extra": "Adults only"
+        },
+        {
+          "name": "Kids' Pool",
+          "category": "Pools",
+          "tags": [
+            "Open 10:00–18:00",
+            "Turtle water jets"
+          ],
+          "icon": "🐢",
+          "desc": "A dedicated kids' pool with turtle-shaped water jets — guaranteed to be a favourite for the little ones.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/splash-pool-protur-biomar-sensatori-resort-mallorca.jpg"
+        },
+        {
+          "name": "Activity Pool",
+          "category": "Pools",
+          "tags": [
+            "Open 10:00–18:00",
+            "Pool activities"
+          ],
+          "icon": "🤽",
+          "desc": "Join organised pool activities and games here. Great for kids and adults who want to get involved rather than just float.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/_planned%20appearance%20copia.jpg"
+        },
+        {
+          "name": "Indoor Pool",
+          "category": "Pools",
+          "tags": [
+            "Open 10:00–18:00",
+            "Under 16s with adult"
+          ],
+          "icon": "🏛️",
+          "desc": "A covered indoor pool — ideal when the afternoon sun gets too strong or on cooler evenings.",
+          "image": "https://www.proturbiomargranhotel.com/files/versions/biomar-sensatori/GALLERY/EXPERIENCE/GALLERY/indoor-pool-protur-biomar-sensatori-resort.jpg"
+        },
+        {
+          "name": "BLUE® Spa Hydrothermal Circuit",
+          "category": "Spa & Wellness",
+          "tags": [
+            "Waterfalls",
+            "Hydro-massage",
+            "Micro bubble beds"
+          ],
+          "icon": "💆",
+          "desc": "The full hydrothermal experience: waterfalls, neck jets, body massage jets, hydro-massage seats and micro bubble beds. Pure relaxation.",
+          "image": "https://www.proturbiomargranhotel.com/files/spa-biomar-protur-biomar-sensatoriresort-sa-coma-mallorca.jpg"
+        }
+      ],
+      "entertainment": [
+        {
+          "name": "Evening Entertainment",
+          "category": "Live Shows",
+          "tags": [
+            "7 nights/week",
+            "Included"
+          ],
+          "icon": "🎭",
+          "desc": "Professional live performances every single evening — vocalists, tribute acts, acrobatics, musical theatre and cultural shows. Plus additional live music in various venues throughout the resort.",
+          "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/5c/63/29/caption.jpg"
+        },
+        {
+          "name": "Kids' Club",
+          "category": "Children · Ages 3–12",
+          "tags": [
+            "3–12 years",
+            "6 days/week",
+            "Included"
+          ],
+          "icon": "🎨",
+          "desc": "Professionally designed activity programme with at least two supervised sessions daily. Themed activities including giant bubbles, water splash play and unusual food tastings — developed by childcare experts.",
+          "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/dc/26/8b/kids-club.jpg"
+        },
+        {
+          "name": "Adventure Youth",
+          "category": "Children · Ages 7–12",
+          "tags": [
+            "7–12 years",
+            "Included"
+          ],
+          "icon": "⚽",
+          "desc": "Sports sessions, pool games and challenges designed to encourage fun and new friendships. Great for Clodagh and Meabh to meet other kids their age.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Teen Activities",
+          "category": "Teens · Ages 13–17",
+          "tags": [
+            "13–17 years",
+            "Mid-June to mid-September"
+          ],
+          "icon": "🎮",
+          "desc": "Giant games, sports, mocktail-making classes and an exclusive weekly teen evening event. Creative and active challenges tailored to the older crowd.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Children's Evening Entertainment",
+          "category": "Children",
+          "tags": [
+            "Nightly",
+            "Included"
+          ],
+          "icon": "🤖",
+          "desc": "Nightly kids' entertainment featuring 2E-3000 — the resort's very own robot — plus lively game shows and themed evenings. A highlight for the younger ones.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Family SENSATion",
+          "category": "Family Activities",
+          "tags": [
+            "All ages",
+            "Included"
+          ],
+          "icon": "🌊",
+          "desc": "Interactive sensory activities for the whole family together — water play, woodland sensory journeys and team challenges. Designed for shared experiences and memory-making.",
+          "image": "placeholder"
+        },
+        {
+          "name": "Live Music",
+          "category": "Entertainment",
+          "tags": [
+            "Daily & evenings",
+            "Multiple venues"
+          ],
+          "icon": "🎵",
+          "desc": "Live musicians from around the world perform throughout the day and evening across various resort venues. Different styles every day — something always playing somewhere.",
+          "image": "placeholder"
+        },
+        {
+          "name": "The Room",
+          "category": "Experience",
+          "tags": [
+            "30 minutes",
+            "Extra charge"
+          ],
+          "icon": "🔐",
+          "desc": "A 30-minute escape room experience with touch-screen monitors, an on-screen host, and synchronised lighting and projection. Logical thinking and video game-style problem solving required.",
+          "image": "placeholder",
+          "extra": "Chargeable"
+        }
+      ],
+      "location_info": {
+        "overview": "Sa Coma sits on Majorca's unspoilt east coast — a quieter, more relaxed corner of the island away from the busy resorts of the south. The hotel is right on the doorstep of a Blue Flag beach with calm, shallow water perfect for swimming. Behind the resort, the Punta de n'Amer nature reserve offers easy walking trails through pine and dune to a clifftop watchtower with panoramic sea views.",
+        "distance": "~70km from Palma Airport (approx. 1 hr 15 min by transfer)",
+        "highlights": [
+          {
+            "name": "Sa Coma Beach",
+            "distance": "On your doorstep",
+            "icon": "🏖️",
+            "desc": "Blue Flag beach with soft sand, calm shallow water, sunbeds, beach bars and water sports. Ideal for families and easy afternoon floats."
+          },
+          {
+            "name": "Punta de n'Amer Nature Reserve",
+            "distance": "5 min walk",
+            "icon": "🌿",
+            "desc": "A protected headland with pine-shaded walking trails, dramatic coastal views and a small historic watchtower at the top. A lovely early-morning or sunset walk."
+          },
+          {
+            "name": "Cala Millor",
+            "distance": "10 min drive",
+            "icon": "🌊",
+            "desc": "One of Majorca's most popular golden sandy beaches with crystal-clear water. Great for swimming, kayaking and paddleboarding, with restaurants and shops along the promenade."
+          },
+          {
+            "name": "Safari Zoo Cala Millor",
+            "distance": "10 min drive",
+            "icon": "🦒",
+            "desc": "A large safari park with apes, elephants, gazelles and ostriches roaming in a simulated natural environment. A great family half-day out."
+          },
+          {
+            "name": "Caves of Drach, Porto Cristo",
+            "distance": "20 min drive",
+            "icon": "🦇",
+            "desc": "One of Majorca's most spectacular sights — a vast underground cave system with Lake Martel, one of the largest underground lakes in Europe. Ends with a live classical music concert on the water."
+          },
+          {
+            "name": "Manacor & Pearl Factory",
+            "distance": "25 min drive",
+            "icon": "💎",
+            "desc": "Majorca's second city, famous for the island's iconic artificial pearls. Factory tours show the whole process from start to polished jewel — and you can buy direct."
+          },
+          {
+            "name": "Cuevas de Artà",
+            "distance": "40 min drive",
+            "icon": "🏔️",
+            "desc": "Dramatic limestone caves near Capdepera with towering stalactites and stalagmites. Nearby Capdepera Castle sits above the town with sweeping views over the coast."
+          },
+          {
+            "name": "Palma Old Town",
+            "distance": "~1 hr drive",
+            "icon": "⛪",
+            "desc": "The island capital — explore La Seu Cathedral, the Almudaina Palace, cobbled old-town streets and excellent restaurants. A great full-day trip."
+          }
+        ],
+        "tips": [
+          "Hire a car for at least a couple of days — the east coast is best explored independently and parking is easy outside Palma.",
+          "The Caves of Drach are hugely popular in July — book tickets online in advance to avoid queuing.",
+          "Glass-bottom boat trips and catamaran cruises depart from nearby Cala Millor with hotel pick-up from Sa Coma.",
+          "Sa Coma and Cala Millor are connected by a flat promenade — easy to walk or hire bikes along the seafront."
+        ]
+      }
     },
     "flights": {
       "return": "25 Jul 2026"
-    }
+    },
+    "consultantAdvice": [
+      {
+        "heading": "Day 1: Hit the Ground Running",
+        "body": "Your flight lands at 18:10 and the ship sails at 22:00 — that sounds comfortable until you factor in baggage reclaim, the transfer to the port, and check-in. Aim to be through arrivals and into your transfer by 19:00 at the latest. Have your cruise documents and passports in your hand luggage, keep the kids fed on the plane, and once you're aboard, drop the bags and go straight to the pool deck — there's no better way to shake off the journey and it'll still be warm."
+      },
+      {
+        "heading": "The Sea Day: Stake Your Claim Early",
+        "body": "Day 2 is your one full day at sea, and it's the day everyone else has the same idea about the sunbeds. Get up a little earlier than usual, grab a good spot on the pool deck, and then use the morning to book your speciality restaurants — Kora La and Surf & Turf fill up fast on a Premium All Inclusive package. The Gamer Zone is a great shout for Clodagh and Meabh if you want a quiet hour with a coffee."
+      },
+      {
+        "heading": "Excursions: A Few Things Worth Knowing",
+        "body": "Rome in July is seriously hot — 32°C is not unusual — so loose, light clothing and a good water bottle each are non-negotiable. The Rome Explorer is a long day (10 hours), so pack snacks and make sure everyone has comfortable walking shoes broken in before you travel. Pompeii is equally exposed, so sun cream, hats, and an early start on the site will make all the difference. Corsica is a gentler half-day — the Flavours & Footsteps tour is a lovely contrast after the intensity of Italy, so just relax and enjoy it. In Sardinia and Palamós, you've got the Ferris family along which makes the days that bit more fun for the kids."
+      },
+      {
+        "heading": "On the Ship: Book It, Don't Miss It",
+        "body": "Get the Broadway Show Lounge in the diary — two shows a night means you're not stuck with one time slot. Movies by Moonlight is genuinely lovely on a warm Mediterranean evening. The Hideout teen club is worth pointing Clodagh and Meabh towards if they want to meet people their own age, and the Squid & Anchor is exactly as good as it sounds for a late-night drink and a bit of live music once the girls are settled."
+      },
+      {
+        "heading": "Disembarkation Morning: Stay Calm",
+        "body": "Day 8 will feel rushed but it isn't if you're organised. Bags outside the cabin the night before, breakfast early, and have your hotel transfer reference ready. You've got a full week in Sa Coma ahead — there's nothing to panic about."
+      },
+      {
+        "heading": "Majorca: Pace Yourselves",
+        "body": "The Sensatori is good enough that you don't need to leave every day, and you shouldn't feel guilty about that. Do book the Caves of Drach early in the week — it's one of the most genuinely spectacular things you can do in Majorca and the lake concert inside is something the girls will talk about for years. Hiring a car for a day or two gives you real freedom; Palma Old Town is worth an afternoon, and Cala Millor is a lovely low-key evening stroll just ten minutes away."
+      },
+      {
+        "heading": "Don't Miss",
+        "body": "Watch for shooting stars from the pool deck on a still night — the Mediterranean sky in mid-July is extraordinary. Book all three speciality à la carte restaurants at the hotel on arrival day — La Toscana, Azafran and the Asian teppanyaki all fill fast in July. And on your last morning in Sa Coma, take a walk through the Punta de n'Amer nature reserve before the airport run. It's five minutes from the hotel door and it'll send you home on a high."
+      }
+    ]
   },
   "ferris": {
     "name": "The Ferrises",
     "members": [
-      { "name": "Attracta", "role": "Lead Passenger" },
-      { "name": "Roisin" },
-      { "name": "Connor" }
+      {
+        "name": "Attracta",
+        "role": "Lead Passenger"
+      },
+      {
+        "name": "Roisin"
+      },
+      {
+        "name": "Connor"
+      }
     ],
     "cabin": {
       "type": "Balcony Junior Suite Cabin with Suite Service",
@@ -78,6 +435,32 @@
     "hotel": null,
     "flights": {
       "return": "18 Jul 2026"
-    }
+    },
+    "consultantAdvice": [
+      {
+        "heading": "Getting There & Boarding Day",
+        "body": "Your flight from Belfast City gets you into Palma at 18:10 — you're sharing it with the Boyles, so the kids will already be in holiday mode before you even board. The ship doesn't sail until 22:00, so once you've checked in and found your balcony suite, take a slow walk around the ship and let the kids pick their favourite spots. That first evening sets the tone — dinner, a wander, maybe catch the first Broadway show. The suite service is worth leaning into from night one."
+      },
+      {
+        "heading": "The Sea Day",
+        "body": "Don't sleep through it. A sea day with this age group is genuinely one of the best days on a cruise. Connor and Roisin can discover the Gamer Zone and the Hideout teen club while you catch a quiet hour on your balcony. Get to The Shack early for a good poolside spot, and keep an eye on the Movies by Moonlight schedule — an open-air film on the ocean is hard to beat. Book Kora La or Surf & Turf for dinner that evening; the speciality restaurants fill up fast and the sea day is your best chance to secure a table."
+      },
+      {
+        "heading": "Pompeii & Vesuvius — Go Prepared",
+        "body": "July in Naples is serious heat. Start the day well hydrated, pack factor 50 and a hat each, and bring more water than you think you need. Pompeii is vast and exposed, and the volcanic stone radiates heat — comfortable, worn-in footwear is non-negotiable. The Vesuvius crater walk is a genuine climb: uneven, dusty and steep in places. Roisin and Connor will likely love it, but pace yourself and don't rush the descent. The views from the rim are extraordinary — it's absolutely worth the effort."
+      },
+      {
+        "heading": "Rome & Ajaccio: Two Big Days Back to Back",
+        "body": "You have full excursions on both Days 5 and 6 — Rome then Corsica — so pace yourselves. Rome is the heavier day: ten hours, July heat regularly hitting 32°C, and a lot of walking on exposed stone. Wear comfortable broken-in shoes, cover knees and shoulders for the Basilica, and bring more water than you think you'll need. The Basilica queue can stretch to two hours in peak July — follow your guide's advice on the day. Corsica the next day is a complete contrast — winding mountain roads, a little train through the maquis and genuinely spectacular scenery. It's a moderate day physically, but those mountain roads can be queasy for anyone prone to travel sickness, so sit up front if you can and take precautions the night before if needed."
+      },
+      {
+        "heading": "On the Ship: Don't Miss",
+        "body": "The Broadway shows are genuinely good — book your preferred nights early through the Navigate app. The Squid & Anchor quiz is a brilliant family evening. Abuela's is the only Mexican restaurant in the Marella fleet — it's worth a reservation mid-cruise. And at least one morning, sit out on your balcony before the kids wake up and watch the sea go by. That's what the suite upgrade is really for."
+      },
+      {
+        "heading": "Final Day: Be Organised the Night Before",
+        "body": "Disembarkation is smooth if you're prepared. Pack everything except overnight essentials, use the suite service to clarify your luggage collection time, and aim to be off the ship mid-morning. Your 19:00 flight gives you comfortable time at Palma airport — but with bags and two kids, don't cut it too fine. Get through security, find a good spot for a final Spanish lunch airside, and let the holiday settle before you head home."
+      }
+    ]
   }
 }
