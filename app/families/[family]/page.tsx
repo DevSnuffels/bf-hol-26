@@ -150,10 +150,21 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
           </p>
 
           {/* Ship card */}
-          <div
-            className="rounded-2xl p-8 mb-4 relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, var(--deep-blue), var(--ocean))' }}
-          >
+          <div className="rounded-2xl mb-4 overflow-hidden" style={{ boxShadow: '0 8px 40px rgba(10,22,40,0.12)' }}>
+            {'image' in cruiseData && cruiseData.image && (
+              <div className="relative" style={{ height: '220px' }}>
+                <img
+                  src={(cruiseData as any).image}
+                  alt={cruiseData.ship}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(10,22,40,0.7) 0%, transparent 50%)' }} />
+              </div>
+            )}
+            <div
+              className="p-8 relative overflow-hidden"
+              style={{ background: 'linear-gradient(135deg, var(--deep-blue), var(--ocean))' }}
+            >
             <span className="absolute right-6 top-5 text-5xl" style={{ opacity: 0.12 }} aria-hidden="true">⚓</span>
             <h3 className="text-2xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
               {cruiseData.ship}
@@ -175,6 +186,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                   </div>
                 </div>
               ))}
+            </div>
             </div>
           </div>
 
