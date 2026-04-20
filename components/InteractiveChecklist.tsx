@@ -15,6 +15,7 @@ export default function InteractiveChecklist({
   storageKey: string;
 }) {
   const [checked, setChecked] = useState<boolean[]>([]);
+  const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
 
   useEffect(() => {
     try {
@@ -68,6 +69,8 @@ export default function InteractiveChecklist({
               type="checkbox"
               checked={checked[i] ?? false}
               onChange={() => toggle(i)}
+              onFocus={() => setFocusedIndex(i)}
+              onBlur={() => setFocusedIndex(null)}
               className="sr-only"
             />
             {/* Custom checkbox */}
@@ -78,7 +81,8 @@ export default function InteractiveChecklist({
                 height: '24px',
                 border: checked[i] ? 'none' : '2px solid var(--sky-blue)',
                 background: checked[i] ? 'var(--sky-blue)' : 'transparent',
-                outline: 'none',
+                outline: focusedIndex === i ? '3px solid var(--sky-blue)' : 'none',
+                outlineOffset: '3px',
               }}
             >
               {checked[i] && (
@@ -89,9 +93,12 @@ export default function InteractiveChecklist({
             </div>
             <p
               className="text-sm leading-relaxed transition-opacity"
-              style={{ color: checked[i] ? 'rgba(133,193,233,0.5)' : 'var(--sky-blue)', textDecoration: checked[i] ? 'line-through' : 'none' }}
+              style={{
+                color: checked[i] ? 'rgba(133,193,233,0.75)' : 'var(--sky-blue)',
+                textDecoration: checked[i] ? 'line-through' : 'none',
+              }}
             >
-              <strong style={{ color: checked[i] ? 'rgba(255,255,255,0.35)' : 'white' }}>{item.title}:</strong>{' '}
+              <strong style={{ color: checked[i] ? 'rgba(255,255,255,0.5)' : 'white' }}>{item.title}:</strong>{' '}
               {item.desc}
             </p>
           </label>

@@ -8,6 +8,7 @@ import RestaurantCarousel from '../../../components/RestaurantCarousel';
 import CardCarousel from '../../../components/CardCarousel';
 import InteractiveChecklist from '../../../components/InteractiveChecklist';
 import VideoEmbed from '../../../components/VideoEmbed';
+import BackToTop from '../../../components/BackToTop';
 
 interface FamilyPageProps {
   params: Promise<{ family: string }>;
@@ -86,7 +87,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
             <Link
               href={family === 'boyle' ? '/families/ferris' : '/families/boyle'}
               className="text-sm px-5 py-2 rounded-full transition-opacity hover:opacity-80 self-start md:self-auto"
-              style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white' }}
+              style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.45)', color: 'white' }}
             >
               View {family === 'boyle' ? 'Ferris' : 'Boyle'} Family →
             </Link>
@@ -197,7 +198,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
               return (
                 <div key={index} className="flex gap-5">
                   {/* Timeline marker */}
-                  <div className="flex flex-col items-center flex-shrink-0" style={{ width: '50px' }}>
+                  <div className="flex flex-col items-center flex-shrink-0" style={{ width: '50px' }} aria-hidden="true">
                     <div
                       className="rounded-full flex-shrink-0 z-10"
                       style={{
@@ -885,6 +886,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
         <p className="text-base">Not long now — let the countdown begin!</p>
         <p className="text-xs mt-2" style={{ opacity: 0.4 }}>Holiday Summary · July 2026</p>
       </footer>
+      <BackToTop />
     </div>
   );
 }

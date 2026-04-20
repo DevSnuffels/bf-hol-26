@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 interface CardItem {
   name: string;
@@ -25,11 +25,32 @@ const PLACEHOLDER_GRADIENTS = [
   'linear-gradient(135deg, #0a1628, #2e86c1)',  // navy → azure
 ];
 
+const ChevronLeft = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M15 18l-6-6 6-6" />
+  </svg>
+);
+
+const ChevronRight = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M9 18l6-6-6-6" />
+  </svg>
+);
+
+const DOTS_THRESHOLD = 8;
+
 export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { items: CardItem[]; accentColor?: string }) {
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef(0);
 
   const next = () => setCurrent((c) => (c + 1) % items.length);
   const prev = () => setCurrent((c) => (c - 1 + items.length) % items.length);
+
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+  };
 
   const item = items[current];
   const activeImage = item.images?.[0] ?? item.image;
@@ -41,6 +62,8 @@ export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { 
       <div
         className="bg-white rounded-2xl overflow-hidden"
         style={{ boxShadow: '0 8px 40px rgba(10,22,40,0.10)' }}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         {/* Image or placeholder */}
         <div className="relative" style={{ height: '210px', overflow: 'hidden' }}>
@@ -123,42 +146,50 @@ export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { 
       <div className="flex items-center justify-between mt-3 px-1">
         <button
           onClick={prev}
-          aria-label="Previous"
+          aria-label={`Previous ${item.category}`}
           className="flex items-center justify-center rounded-full"
           style={{ width: '56px', height: '56px', minWidth: '56px', touchAction: 'manipulation', background: 'rgba(10,22,40,0.07)', color: 'var(--navy)', fontSize: '1.2rem' }}
         >
-          ‹
+          <ChevronLeft />
         </button>
 
-        <div className="flex gap-1.5 flex-wrap justify-center" style={{ maxWidth: '280px' }}>
-          {items.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              aria-label={`Go to ${items[i].name}`}
-              className="rounded-full transition-all"
-              style={{
-                width: i === current ? '20px' : '8px',
-                height: '8px',
-                background: i === current ? accentColor : 'rgba(10,22,40,0.18)',
-              }}
-            />
-          ))}
-        </div>
+        {items.length <= DOTS_THRESHOLD ? (
+          <div className="flex gap-1.5 flex-wrap justify-center" style={{ maxWidth: '280px' }}>
+            {items.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                aria-label={`Go to ${items[i].name}`}
+                className="rounded-full transition-all"
+                style={{
+                  width: i === current ? '20px' : '8px',
+                  height: '8px',
+                  background: i === current ? accentColor : 'rgba(10,22,40,0.18)',
+                }}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm font-medium" style={{ color: '#5a6e7e' }}>
+            {current + 1} <span style={{ opacity: 0.5 }}>of</span> {items.length}
+          </p>
+        )}
 
         <button
           onClick={next}
-          aria-label="Next"
+          aria-label={`Next ${item.category}`}
           className="flex items-center justify-center rounded-full"
           style={{ width: '56px', height: '56px', minWidth: '56px', touchAction: 'manipulation', background: 'rgba(10,22,40,0.07)', color: 'var(--navy)', fontSize: '1.2rem' }}
         >
-          ›
+          <ChevronRight />
         </button>
       </div>
 
-      <p className="text-center text-xs mt-2" style={{ color: '#5a6e7e' }}>
-        {current + 1} of {items.length}
-      </p>
+      {items.length <= DOTS_THRESHOLD && (
+        <p className="text-center text-xs mt-2" style={{ color: '#5a6e7e' }}>
+          {current + 1} of {items.length}
+        </p>
+      )}
     </div>
   );
 }

@@ -70,10 +70,10 @@ export default function StickyNav({ items }: { items: NavItem[] }) {
         boxShadow: '0 2px 12px rgba(10,22,40,0.06)',
       }}
     >
-      {/* Countdown bar */}
+      {/* Desktop countdown bar — two rows (hidden on mobile) */}
       {days >= 0 && (
         <div
-          className="flex items-center justify-center gap-3 px-4 py-1.5"
+          className="hidden sm:flex items-center justify-center gap-3 px-4 py-1.5"
           style={{ borderBottom: '1px solid rgba(10,22,40,0.06)' }}
         >
           <span style={{ fontSize: '0.65rem', color: '#5a6e7e', letterSpacing: '0.08em', textTransform: 'uppercase', fontFamily: 'var(--font-raleway)' }}>
@@ -92,9 +92,23 @@ export default function StickyNav({ items }: { items: NavItem[] }) {
         </div>
       )}
 
-      {/* Section nav */}
+      {/* Section nav — with inline compact countdown on mobile */}
       <div className="overflow-x-auto">
         <div className="flex items-center gap-1 px-4" style={{ whiteSpace: 'nowrap', maxWidth: '900px', margin: '0 auto' }}>
+
+          {/* Mobile-only compact countdown inline with tabs */}
+          {days >= 0 && (
+            <div
+              className="sm:hidden flex-shrink-0 flex items-center gap-1 pr-3 mr-1"
+              style={{ borderRight: '1px solid rgba(10,22,40,0.1)' }}
+            >
+              <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--navy)', fontVariantNumeric: 'tabular-nums', fontFamily: 'var(--font-raleway)', lineHeight: 1 }}>
+                {pad(days)}<span style={{ fontSize: '0.6rem', fontWeight: 400, color: '#5a6e7e' }}>d</span>{' '}
+                {pad(hours)}<span style={{ fontSize: '0.6rem', fontWeight: 400, color: '#5a6e7e' }}>h</span>
+              </span>
+            </div>
+          )}
+
           {items.map((item) => {
             const isActive = active === item.id;
             return (
@@ -103,7 +117,7 @@ export default function StickyNav({ items }: { items: NavItem[] }) {
                 onClick={() => scrollTo(item.id)}
                 className="flex-shrink-0"
                 style={{
-                  padding: '12px 12px',
+                  padding: '14px 12px',
                   fontSize: '0.8rem',
                   fontWeight: isActive ? 600 : 400,
                   fontFamily: 'var(--font-raleway)',
@@ -115,6 +129,7 @@ export default function StickyNav({ items }: { items: NavItem[] }) {
                   borderBottom: isActive ? '2px solid var(--ocean)' : '2px solid transparent',
                   cursor: 'pointer',
                   transition: 'color 0.15s, border-bottom-color 0.15s',
+                  minHeight: '44px',
                 }}
               >
                 {item.label}
