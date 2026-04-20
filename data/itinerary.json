@@ -1,6 +1,7 @@
 {
   "cruise": {
     "ship": "Marella Explorer",
+    "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/8d9a862e-e3dd-4ac5-b400-b03d007ec222/ACC_150016_MARELLA_VOYAGER_F080WebOriginalCompressed.jpg",
     "route": "Treasures of the Mediterranean",
     "embarkation": "11 Jul 2026",
     "disembarkation": "18 Jul 2026",
@@ -44,6 +45,12 @@
             "name": "Discover Sardinia",
             "duration": "5 hours · Everyone",
             "description": "Wind your way into the hilly, village-speckled interior of Sardinia — past cork forests, vineyards, and olive groves. First stop is Aggius, one of the oldest villages on the island, where you’ll explore an ethnographic museum filled with traditional costumes and hand-woven fabrics. Then on to Tempio, a beautiful ancient village with cobbled streets, a Baroque cathedral, artisan shops, and Italian fashion boutiques. Grab a handmade pasta lunch at a family-run trattoria before heading back to the coast. A proper taste of the real Sardinia.",
+            "tips": [
+              "Both villages have cobbled streets — wear comfortable walking shoes",
+              "July is peak heat; bring water, sunscreen, and a hat — there’s little shade in the market squares",
+              "The trattoria lunch is a highlight — try the pasta with wild boar ragù if it’s on the menu",
+              "Pick up local mirto (myrtle liqueur) or pecorino at the Tempio market — unique to Sardinia and among the best gifts to bring home"
+            ],
             "images": [
               {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Aggius_panorama.jpg/1280px-Aggius_panorama.jpg",
@@ -78,6 +85,12 @@
             "name": "Pompeii & Herculaneum",
             "duration": "All 4 Boyles",
             "description": "A real history blockbuster — two ancient Roman cities frozen in time by the eruption of Mount Vesuvius in 79 AD. Walk through the streets of Pompeii, where you’ll see preserved houses, temples, baths, and even a Roman fast-food counter still etched into the stone. Then head to Herculaneum, a smaller but even better-preserved site where wooden furniture, mosaics, and food have survived beneath the volcanic mud. It’s like stepping back 2,000 years — absolutely jaw-dropping.",
+            "tips": [
+              "Both sites are very exposed with almost no shade — hats, sunscreen, and plenty of water are non-negotiable in July",
+              "Herculaneum is smaller than Pompeii but better preserved — the intact wooden furniture and food jars that survived are extraordinary",
+              "The plaster casts of Vesuvius victims at Pompeii are deeply moving but can be upsetting — worth a quiet word with the kids beforehand",
+              "Uneven terrain throughout — wear your most comfortable shoes"
+            ],
             "images": [
               {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pompeii_Forum.JPG/1280px-Pompeii_Forum.JPG",
@@ -102,6 +115,13 @@
             "name": "Pompeii & Mount Vesuvius",
             "duration": "Marion, Roisin & Connor",
             "description": "The same incredible walk through the ancient streets of Pompeii, but instead of Herculaneum, the Ferris family heads up Mount Vesuvius itself — the only active volcano on mainland Europe you can actually climb. Hike to the crater rim and peer down into the belly of the beast, with sweeping views across the Bay of Naples. Combine that with the eerie, awe-inspiring ruins below and it’s an unforgettable day.",
+            "tips": [
+              "The crater climb is steep and takes about 30–40 minutes each way — sturdy footwear is essential",
+              "It’s noticeably cooler and windier at the summit even in July — pack a light layer",
+              "Pompeii is very exposed with little shade — hat, sunscreen, and water are non-negotiable",
+              "The plaster casts of Vesuvius victims are haunting — worth a quiet heads-up for the kids",
+              "Views from the crater rim on a clear day are extraordinary — fingers crossed for clear skies"
+            ],
             "images": [
               {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pompeii_Forum.JPG/1280px-Pompeii_Forum.JPG",
@@ -137,6 +157,13 @@
             "name": "Rome Explorer",
             "duration": "10 hours · All 4 Boyles",
             "description": "A full day in the Eternal City — and you’ll need every minute. Coach from the port into the heart of Rome to see the Colosseum, where gladiators once fought in front of 50,000 spectators. Walk past the Roman Forum and Palatine Hill, toss a coin in the Trevi Fountain, marvel at the Pantheon, and stroll past the Spanish Steps. After lunch at a traditional Italian restaurant, cross into Vatican City to see St Peter’s Square and Basilica — one of the most beautiful spots on earth. Ten hours of pure wonder.",
+            "tips": [
+              "The coach to Rome is about 1h 30min each way — factor this into energy levels for the kids",
+              "Vatican dress code is strictly enforced: shoulders and knees must be covered for everyone — a light scarf or cardigan in your bag is essential",
+              "Rome has hundreds of free drinking fountains (nasoni) throughout the city — bring a refillable water bottle",
+              "Wear your most comfortable shoes — you’ll cover several kilometres across the day",
+              "Stick closely to the guide’s timings; Rome traffic is unpredictable and the ship won’t wait"
+            ],
             "images": [
               {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
@@ -150,6 +177,43 @@
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1280px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
                 "caption": "St Peter’s Square, Vatican City"
               }
+            ]
+          },
+          {
+            "families": [
+              "ferris"
+            ],
+            "label": "Ferris Family",
+            "name": "Rome — All in One Day",
+            "duration": "10 hours",
+            "description": "The ultimate Rome highlights tour in a fully air-conditioned coach. You'll see the Trevi Fountain, the Pantheon, Venice Square and the mighty Colosseum — the ultimate symbol of Rome. After free time for lunch, the tour continues to Vatican City to see St Peter's Square, considered one of the most beautiful squares in the world, and the famous Basilica where St Peter was buried — a Renaissance masterpiece shaped by Michelangelo, Raphael and Bernini. Ideal for first-timers to Rome.",
+            "tips": [
+              "The air-conditioned coach is a genuine relief in July heat — it's about 1h 30min each way",
+              "Pack a scarf or cardigan for Vatican entry — shoulders and knees must be covered, and the dress code is strictly enforced",
+              "For lunch, duck down a side street away from the main piazzas — better food at much better prices",
+              "Rome has free drinking fountains (nasoni) throughout the city — bring a refillable water bottle",
+              "This is a significant walking day — wear the most comfortable shoes you own, no exceptions"
+            ],
+            "images": [
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
+                "caption": "The Colosseum — the ultimate symbol of Rome"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg",
+                "caption": "Trevi Fountain — toss a coin and make a wish"
+              },
+              {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1280px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
+                "caption": "St Peter's Square, Vatican City"
+              }
+            ],
+            "notes": [
+              "Queues for the Basilica can exceed 2 hours — if very busy the guide will offer an outside commentary or the option to queue independently and rejoin the group at the allocated time.",
+              "You must cover knees and shoulders when visiting religious sites.",
+              "The Colosseum is viewed from the outside only.",
+              "Large bags may not be permitted inside St Peter's Basilica.",
+              "Large amount of physical activity — wear comfortable shoes."
             ]
           }
         ],
@@ -171,6 +235,12 @@
             "name": "Flavours & Footsteps of Imperial Ajaccio",
             "duration": "2.5 hours · All 4 Boyles",
             "description": "A walking tour through Napoleon’s birthplace, tracing his story from the house where he was born to the cathedral where he was baptised. Wander tree-lined boulevards, peek into the charming Corsican food market at Place de Gaulle — think local cheeses, charcuterie, honey, and wines — and sample some of the island’s bold, rustic flavours along the way. A short and sweet morning that leaves plenty of time for the beach or a wander afterwards.",
+            "tips": [
+              "The food market is one of Corsica’s finest — arrive hungry and try the samples freely offered by stallholders",
+              "Pick up mirto (myrtle liqueur), local honey, or chestnut products as gifts — unique to Corsica and hard to find elsewhere",
+              "The tour finishes with 3+ hours to spare before the ship leaves — perfect for a beach visit afterwards",
+              "The nearest beach (Plage du Ricanto) is a short taxi ride from the port — the kids will love it after the tour"
+            ],
             "images": [
               {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Ajaccio_MN1JPG.jpg/1280px-Ajaccio_MN1JPG.jpg",
@@ -184,6 +254,25 @@
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Port_Ajaccio.JPG/1280px-Port_Ajaccio.JPG",
                 "caption": "Ajaccio — colourful harbour and old town"
               }
+            ]
+          },
+          {
+            "families": [
+              "ferris"
+            ],
+            "label": "Ferris Family",
+            "name": "Mini-Train & Mountain, Corsica",
+            "duration": "4.5 hours",
+            "description": "Go off the beaten track and discover all Corsica's best bits. The island's scenery is nothing short of sensational — herby-green maquis, vineyards and sheer granite cliff faces, about as far as you can get from the cosmopolitan buzz of the beach resorts. Your tour takes you on a drive through the mountains to Cricheto Pass, then you'll board a little wheel train to get to grips with Corsica's back country and learn all about the herbs — sage, juniper and myrtle — that make up the famous maquis.",
+            "tips": [
+              "Winding mountain roads throughout — anyone prone to motion sickness should take tablets beforehand",
+              "Pack a light layer — the mountain passes can be significantly cooler than the port, even in July",
+              "The maquis herbs give Corsica its extraordinary scent — you'll smell it the moment you reach the interior"
+            ],
+            "images": [],
+            "notes": [
+              "A lot of this tour is on winding mountain roads.",
+              "Moderate physical activity."
             ]
           }
         ],
@@ -206,6 +295,13 @@
             "name": "Mini Train & Medieval Villages",
             "duration": "Everyone",
             "description": "All aboard a little tourist train for a scenic ride through the stunning Costa Brava countryside. You’ll wind through charming medieval villages with narrow cobbled streets, ancient stone archways, and gorgeous views over terracotta rooftops to the sea. Stop to explore the old quarters, browse artisan shops, and soak in that golden Spanish light. It’s relaxed, picturesque, and the perfect way to spend the last port day together before heading back to the ship.",
+            "tips": [
+              "Palamós is famous for its prawns (gambes de Palamós) — if there’s time for lunch in town, order them",
+              "The village of Pals is the photographic highlight of the tour — stone towers and sea views in every direction",
+              "Spanish shops often close 14:00–17:00 for siesta — plan any shopping for the morning",
+              "Cobbled streets throughout — comfortable shoes make a real difference",
+              "There may be time for a quick swim at Palamós beach after the tour — worth bringing swimming things just in case"
+            ],
             "images": [
               {
                 "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Pals.JPG/1280px-Pals.JPG",
@@ -254,7 +350,7 @@
           "included": true,
           "dress": "Casual by day, smart in the evening",
           "desc": "The grand main dining room with floor-to-ceiling windows and full waiter service. No assigned tables or set mealtimes — just turn up. The dinner menu rotates nightly over 7 nights. Look out for ‘Treat Yourself’ dishes like rack of lamb and sirloin steak. Spectacular sunset views.",
-          "image": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_1468-1024x768.jpeg",
+          "image": "https://content.tui.co.uk/adamtui/2018_7/16_14/b821f087-3264-48dd-81f4-a91f00e795a5/CRU_EXP_18_F168_Latitude_53WebOriginalCompressed.jpg",
           "matterport": "4tziHsYEVxc"
         },
         {
@@ -264,7 +360,7 @@
           "included": true,
           "dress": "Smart",
           "desc": "Regional Italian favourites crafted with authentic ingredients. Caprese salad or meatballs to start, creamy pasta or hearty meat dishes for mains, then a classic Italian cheese platter or tiramisu trio to finish. Walk-in only — arrive before 7pm to avoid the wait.",
-          "image": "https://spcdn.shortpixel.ai/spio/ret_img,q_cdnize,to_auto,s_webp:avif/emmacruises.com/wp-content/uploads/2025/08/IMG_0318-1024x768.jpeg",
+          "image": "https://content.tui.co.uk/adamtui/2019_8/7_11/2653c35f-d100-44e0-a9ab-aaa200c5aada/CRU_EXPLORER2_F130_VistaWebOriginalCompressed.jpg",
           "matterport": "FhVeer8VSc3"
         },
         {
@@ -283,7 +379,13 @@
           "included": true,
           "dress": "Casual",
           "desc": "A food hall for breakfast, then eight different eateries put their best dishes forward for lunch and dinner. Highlights: roast dinners at Gravy Boat, Asian curries at Banyan Leaf, Greek-style pittas at Athenas. Late-night snack menu available.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/1280px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/0a85b8c8-2f7a-4253-be97-b03d0080712b/ACC_150016_MARELLA_VOYAGER_F161_THEKITCHENSWebOriginalCompressed.jpg",
+          "images": [
+            "https://content.tui.co.uk/adamtui/2023_7/12_7/0a85b8c8-2f7a-4253-be97-b03d0080712b/ACC_150016_MARELLA_VOYAGER_F161_THEKITCHENSWebOriginalCompressed.jpg",
+            "https://content.tui.co.uk/adamtui/2025_7/23_9/2a952345-c7c8-405d-aa29-b323009ac204/ACC_150016_Marella_Voyager_F445_KITCHENSWebOriginalCompressed.jpg",
+            "https://content.tui.co.uk/adamtui/2023_7/12_7/c51cc375-08a1-4207-b650-b03d0080abd3/ACC_150016_MARELLA_VOYAGER_F174_THEKITCHENSWebOriginalCompressed.jpg",
+            "https://content.tui.co.uk/adamtui/2023_7/12_7/5a20dd4e-e71c-4cfe-861b-b03d00808b86/ACC_150016_MARELLA_VOYAGER_F167_THEKITCHENSWebOriginalCompressed.jpg"
+          ]
         },
         {
           "name": "Snack Shack",
@@ -292,7 +394,7 @@
           "included": true,
           "dress": "Beachwear welcome",
           "desc": "Food stalls and beach huts set the scene. Grab-and-go lunches — sandwiches, salads, chicken wings, burgers, and hot dogs. A drinks station is on hand too. Ideal on port days when you want something quick before heading out.",
-          "image": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/5776ee72-e97e-4edd-8456-f7fd3f7351d4/IMG_6568.jpeg",
+          "image": "https://content.tui.co.uk/adamtui/2018_7/16_13/1145d533-5632-4739-8436-a91f00e2282d/CRU_EXP_18_F180_Snack_ShackWebOriginalCompressed.jpg",
           "matterport": "PoSCdbn3cYQ"
         },
         {
@@ -302,7 +404,7 @@
           "included": true,
           "dress": "Casual",
           "desc": "The only Mexican restaurant in the entire Marella fleet. Nachos and chilli for lunch, then tacos, burritos, and churros for dinner — all made with authentic ingredients.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/1280px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/2332d91b-4d24-4261-b8e8-b03d007db00b/ACC_150016_MARELLA_VOYAGER_F025_ABUELAWebOriginalCompressed.jpg"
         },
         {
           "name": "Piccadilly’s",
@@ -311,7 +413,7 @@
           "included": true,
           "dress": "Smart",
           "desc": "Classic British comforts with sea views. Pork sharing board or smoked salmon roulade to start, then roast dinner or tikka curry pie, and rice pudding or sorbet to finish. A little taste of home, afloat.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sunday_roast_-_roast_beef_1.jpg/1280px-Sunday_roast_-_roast_beef_1.jpg"
+          "image": "https://content.tui.co.uk/adamtui/2025_3/17_12/513f2045-0c12-4fd7-9415-b2a300c835d8/ACC_150015_CRU__EXPLORER2_10_Picadilly'sWebOriginalCompressed.jpg"
         },
         {
           "name": "Kora La",
@@ -321,7 +423,7 @@
           "cover": "~£27pp",
           "dress": "Smart",
           "desc": "Pan-Asian speciality by celebrity chef Ian Pengelley. Gyozas, dumplings, spring rolls, and speciality curries. Standout dishes: duck & watermelon salad, Indian spiced king prawns, Indonesian beef rendang. Book on day one — it fills up fast.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Thai_food_2.jpg/1280px-Thai_food_2.jpg"
+          "image": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/1689437054515-UXOQP65RS1D01O5W34GK/IMG_7127.jpeg"
         },
         {
           "name": "Surf & Turf",
@@ -331,7 +433,7 @@
           "cover": "~£32pp",
           "dress": "Smart",
           "desc": "Leather booths and 28-day-aged steaks. Kick off with the Turf Sharing Board or king scallops, then lamb chops, lobster, or the signature steak. Pair with lobster macaroni cheese or truffle mash. Consistently rated as worth every penny.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Carnivore_Restaurant_meal.jpg/1280px-Carnivore_Restaurant_meal.jpg",
+          "image": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/1689437057109-CP93ICBQN1I3SXVT5IVH/IMG_7126.jpeg",
           "matterport": "ViJp3WXaeqL",
           "menuLink": "https://content.tui.co.uk/adamtui/2023_6/19_8/861bcd06-a885-4e24-bd5c-b02600924557/Voyager_SurfTurf_Menu.pdf"
         },
@@ -342,7 +444,7 @@
           "included": false,
           "dress": "Smart",
           "desc": "Celebrating the best of British cuisine. Choose a three-course à la carte or a seven-course tasting menu paired with a flight of wine. Also hosts The Great Musical Afternoon Tea weekly — West End–inspired dishes, cocktail included. Whole party must book the same menu.",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Dessert_table.jpg/1280px-Dessert_table.jpg"
+          "image": "https://images.squarespace-cdn.com/content/v1/5c61d907c46f6d235ce5760f/1689517528878-X1H7GG3024NZZYJBFIM9/IMG_6146.jpeg"
         },
         {
           "name": "Umi Sushi",
@@ -401,7 +503,11 @@
           ],
           "icon": "🎭",
           "desc": "West End–scale theatre with up to 12 all-singing, all-dancing productions on a 14-night sailing — six shows on a 7-night cruise, with eight created exclusively for Marella Voyager. Start with a welcome drink, then sit back and enjoy the show.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/5edc4468-1853-463a-a835-b03d007e4f1b/ACC_150016_MARELLA_VOYAGER_F057_BROADWAYWebOriginalCompressed.jpg",
+          "images": [
+            "https://content.tui.co.uk/adamtui/2023_7/12_7/5edc4468-1853-463a-a835-b03d007e4f1b/ACC_150016_MARELLA_VOYAGER_F057_BROADWAYWebOriginalCompressed.jpg",
+            "https://content.tui.co.uk/adamtui/2025_7/30_8/eaefb34e-0c68-4c06-8446-b32a008fa7fe/ACC_150016_MARELLA_VOYAGER_F608_BATTLE_OF_THE_BANDSWebOriginalCompressed.jpg"
+          ]
         },
         {
           "name": "Squid & Anchor",
@@ -414,7 +520,7 @@
           ],
           "icon": "🍺",
           "desc": "A traditional British pub, styled and stocked to match. Live bands and musicians every evening, plus interactive quiz nights and gameshows. Great craic, great atmosphere — one of the social hubs of the ship.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/d25501af-606e-4863-bce2-b03d00805dc2/ACC_150016_MARELLA_VOYAGER_F157_SQUID&ANCHORWebOriginalCompressed.jpg"
         },
         {
           "name": "The Electric Rooms",
@@ -428,7 +534,7 @@
           ],
           "icon": "🎲",
           "desc": "When night falls, the Electric Rooms comes alive. Hit the LED-lit dancefloor, grab a drink from the bar, or try your luck at the casino — blackjack, roulette, and slot machines all feature. The late-night spot for dancing and gambling.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/af025ee5-8169-4f14-912b-b03d007edddc/ACC_150016_MARELLA_VOYAGER_F086_ELECTRICROOMSWebOriginalCompressed.jpg"
         },
         {
           "name": "The Exchange",
@@ -441,7 +547,7 @@
           ],
           "icon": "🥂",
           "desc": "A hidden-away adults-only speakeasy with a cocktail menu you won’t find anywhere else on the ship. Live music every evening, and on specific nights a full immersive 1920s-inspired experience takes centre stage. Pre-book — and dress the part.",
-          "image": "placeholder",
+          "image": "https://content.tui.co.uk/adamtui/2025_7/23_9/27162fe7-e105-4302-aa1e-b323009b0e44/ACC_150016_Marella_Voyager_F466_THE_EXCHANGEWebOriginalCompressed.jpg",
           "extra": "Chargeable"
         },
         {
@@ -455,7 +561,7 @@
           ],
           "icon": "🥂",
           "desc": "If you’re after something bubbly, Flutes is the bar for you. Sip cold Champagne or Prosecco to the sounds of a pianist, across two floors. The ‘push for bubbles’ buttons are a highlight. Note: Champagne is chargeable — Prosecco is included.",
-          "image": "placeholder",
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/2aed4b8f-a717-4995-a6bc-b03d007f492d/ACC_150016_MARELLA_VOYAGER_F105_FLUTESWebOriginalCompressed.jpg",
           "extra": "Champagne chargeable"
         },
         {
@@ -470,7 +576,7 @@
           ],
           "icon": "🎨",
           "desc": "A bar unique to Marella Voyager. By day: shuffleboard and arts & crafts activities. By night: sip cocktails while listening to live singers and musicians in a beautifully decorated art-gallery setting.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/ddbc0347-a629-4010-9924-b03d007df672/ACC_150016_MARELLA_VOYAGER_F039_ARTHOUSEWebOriginalCompressed.jpg"
         },
         {
           "name": "The Summer House",
@@ -484,7 +590,7 @@
           ],
           "icon": "🌴",
           "desc": "Nestled between Nonna’s and Abuela’s with a retractable roof and open-air area offering panoramic views. Mexican cocktails and cold beers by day. Live singers and musicians in the evening — a brilliant spot for a sundowner.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/1db63e98-2550-4886-9cb6-b03d00806c8a/ACC_150016_MARELLA_VOYAGER_F160_SUMMERHOUSEWebOriginalCompressed.jpg"
         },
         {
           "name": "Aperitif",
@@ -497,7 +603,7 @@
           ],
           "icon": "🍸",
           "desc": "Nestled between the speciality restaurants, Aperitif is the perfect pre-dinner or post-meal spot. Prosecco, premium spirits, and specialist gin and whiskey menus. A sophisticated and relaxed bar with a great location.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/ac12f9d0-27ab-48d5-9c2c-b03d007dd0c9/ACC_150016_MARELLA_VOYAGER_F032_APERITIFWebOriginalCompressed.jpg"
         },
         {
           "name": "The Shack",
@@ -510,7 +616,7 @@
           ],
           "icon": "🍹",
           "desc": "Overlooking the pool deck, The Shack serves soft drinks, classic alcoholic options, and frozen cocktails — including the ever-popular piña colada. The go-to bar for a refreshing drink between dips in the pool.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/13cda231-88f8-4bf8-89ec-b03d0080afdc/ACC_150016_MARELLA_VOYAGER_F175_THESHACKWebOriginalCompressed.jpg"
         },
         {
           "name": "The Cinema",
@@ -524,7 +630,7 @@
           ],
           "icon": "🎬",
           "desc": "An indoor cinema screening a variety of Hollywood classics and the latest box office releases throughout the day, with evening screenings too. A great option for sea days or when you fancy a couple of hours out of the sun.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/9a587ea0-72c1-4d26-84bd-b03d007e70df/ACC_150016_MARELLA_VOYAGER_F063_CINEMAWebOriginalCompressed.jpg"
         },
         {
           "name": "Movies by Moonlight",
@@ -537,7 +643,7 @@
           ],
           "icon": "🌙",
           "desc": "Our open-air cinema on the pool deck — the perfect way to end an evening. Settle in under the stars with a bag of popcorn and a hot chocolate, and enjoy classic films or the latest box office hits on the big screen.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_1/3_9/515e7632-a15b-4841-8a50-af7f009ac2f0/MARELLA_BRAND_22_F185WebOriginalCompressed.jpg"
         }
       ],
       "shipFacilities": [
@@ -552,7 +658,7 @@
           ],
           "icon": "🏊",
           "desc": "The social hub of the ship. A large swimming pool with a full daily entertainment schedule — expect pool games, aqua aerobics, trivia, and the famous Sail Away Party on night one. Surrounded by sun loungers with a pool bar right next to it.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_10/12_9/1056fee4-6c00-4903-9967-b0990097e3db/MVo_Pool_Deck_0011_EDITWebOriginalCompressed.jpg"
         },
         {
           "name": "Whirlpools",
@@ -565,7 +671,7 @@
           ],
           "icon": "♨️",
           "desc": "Two whirlpools sit right next to the outdoor pool, each fitted with powerful water jets — perfect for muscle-melting dips after a busy port day. Popular spots to unwind and watch the sea go by.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2025_7/23_9/e894ab4c-7928-473f-8322-b323009c3d9a/MARELLA_PRODUCT_25_147_WHIRLPOOLWebOriginalCompressed.jpg"
         },
         {
           "name": "Oceans Spa & Beauty Salon",
@@ -579,7 +685,7 @@
           ],
           "icon": "💆",
           "desc": "An impressive menu of treatments: rejuvenating facials, manicures, relaxing massages — all available in solo and couples’ rooms. Full-service beauty salon for hair and makeup. Thermal area with heated loungers, steam rooms, and sauna. Treatments and facilities are chargeable.",
-          "image": "placeholder",
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/5b8ece00-7cb3-45e5-8834-b03d00803c4c/ACC_150016_MARELLA_VOYAGER_F151_SPAWebOriginalCompressed.jpg",
           "extra": "Chargeable"
         },
         {
@@ -593,7 +699,7 @@
           ],
           "icon": "🌅",
           "desc": "An adults-only terrace at the bow of the ship with luxury sunbeds and stunning first-class sea views. Cabanas are available for a hire charge if you want a private retreat. Peaceful, quiet, and utterly relaxing.",
-          "image": "placeholder",
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/e1284cfa-35ea-47f0-9e15-b03d0080b437/ACC_150016_MARELLA_VOYAGER_F176_VERANDAWebOriginalCompressed.jpg",
           "extra": "Cabanas chargeable"
         },
         {
@@ -607,7 +713,7 @@
           ],
           "icon": "💪",
           "desc": "A well-equipped gym with sea views, featuring strength-training gear, cardio machines, and everything you need for a full-body workout. Classes also available. A jogging track runs around the top deck for those who prefer the fresh air.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/d25dcfb5-823f-4c54-9bf5-b03d007f65f8/ACC_150016_MARELLA_VOYAGER_F110_GYMWebOriginalCompressed.jpg"
         },
         {
           "name": "Jogging Track",
@@ -620,7 +726,7 @@
           ],
           "icon": "🏃",
           "desc": "The jogging track circles the very top of the ship, giving you some of the best sea views on board while you get your steps in. A great way to start the morning before the sun gets too hot.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/a922fe3b-2d08-4e9a-8a02-b03d007fe76e/ACC_150016_MARELLA_VOYAGER_F134_RUNNINGTRACKWebOriginalCompressed.jpg"
         },
         {
           "name": "Minigolf",
@@ -632,7 +738,7 @@
           ],
           "icon": "⛳",
           "desc": "Work on your putting skills with a round of crazy golf at the very top of the ship. Open to all ages and a fun way to spend an hour at sea — competitive family battles welcome.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/46c7430c-e77f-4ddb-8a9a-b03d007fc332/ACC_150016_MARELLA_VOYAGER_F127_MINIGOLFWebOriginalCompressed.jpg"
         },
         {
           "name": "M Club",
@@ -646,7 +752,7 @@
           ],
           "icon": "🎡",
           "desc": "Little ones will love the M Club, hosted by the M Crew — Marella’s own cast of characters. A packed daily activity programme, plus evening events including movie nights and pizza-making sessions. Qualified hosts throughout.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/f30be28c-4e62-4627-8aa7-b03d007fa57f/ACC_150016_MARELLA_VOYAGER_F122_LATITIDEWebOriginalCompressed.jpg"
         },
         {
           "name": "Mini M Club",
@@ -674,7 +780,7 @@
           ],
           "icon": "🎮",
           "desc": "The Hideout is made for teens and older kids — loaded with games consoles and comfy chairs. In high season, it hosts a variety of organised games and events. A space to relax, meet other young cruisers, and escape the adults.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/bcb53069-fe2c-4472-a930-b03d007f70a4/ACC_150016_MARELLA_VOYAGER_F112_HIDEOUTWebOriginalCompressed.jpg"
         },
         {
           "name": "Gamer Zone",
@@ -687,7 +793,7 @@
           ],
           "icon": "🕹️",
           "desc": "Fully stocked with games consoles and retro arcade machines — open to all ages. Whether you’re 10 or 60, the Gamer Zone is a great way to spend a sea day. Guaranteed family competition.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/2a8ffb24-cf50-4f03-96fc-b03d007f6096/ACC_150016_MARELLA_VOYAGER_F109_GAMERZONEWebOriginalCompressed.jpg"
         },
         {
           "name": "Kids’ Pool",
@@ -700,7 +806,7 @@
           ],
           "icon": "🚿",
           "desc": "A dedicated dipping pool reserved for younger cruisers — the perfect size for a cool-down splash. Positioned near the main pool so parents can keep an eye on everyone at once.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_1/3_9/9ca99302-58a2-4404-9810-af7f009a3ea5/MARELLA_BRAND_22_F124WebOriginalCompressed.jpg"
         },
         {
           "name": "The Coffee Port",
@@ -727,7 +833,7 @@
           ],
           "icon": "🛍️",
           "desc": "When the ship is at sea, it’s time to hit the shops. The onboard boutiques carry everyday essentials and a full range of duty-free products — perfume, jewellery, souvenirs, and more.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2023_7/12_7/68c832fb-12b3-4b6e-a157-b03d007ffb33/ACC_150016_MARELLA_VOYAGER_F138_SHOPSWebOriginalCompressed.jpg"
         },
         {
           "name": "Pool Bar",
@@ -740,7 +846,7 @@
           ],
           "icon": "🍹",
           "desc": "The Pool Bar sits right next to the main pool on Deck 11 — the ideal spot to grab drinks and frozen cocktails between sunbathing sessions without having to go far from your sun lounger.",
-          "image": "placeholder"
+          "image": "https://content.tui.co.uk/adamtui/2020_1/13_11/16b6d691-bdae-4915-b75b-ab4100c2ab9e/CRU_SOCIAL_DIS_F052_CocktailsWebOriginalCompressed.jpg"
         }
       ]
     }

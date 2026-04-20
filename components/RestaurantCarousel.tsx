@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 interface DiningItem {
   name: string;
@@ -15,11 +15,32 @@ interface DiningItem {
   menuLink?: string;
 }
 
+const ChevronLeft = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M15 18l-6-6 6-6" />
+  </svg>
+);
+
+const ChevronRight = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M9 18l6-6-6-6" />
+  </svg>
+);
+
+const DOTS_THRESHOLD = 8;
+
 export default function RestaurantCarousel({ dining }: { dining: DiningItem[] }) {
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef(0);
 
   const next = () => setCurrent((c) => (c + 1) % dining.length);
   const prev = () => setCurrent((c) => (c - 1 + dining.length) % dining.length);
+
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+  };
 
   const restaurant = dining[current];
 
@@ -29,6 +50,8 @@ export default function RestaurantCarousel({ dining }: { dining: DiningItem[] })
       <div
         className="bg-white rounded-2xl overflow-hidden"
         style={{ boxShadow: '0 8px 40px rgba(10,22,40,0.1)' }}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         {/* Image */}
         <div className="relative" style={{ height: '220px', overflow: 'hidden' }}>
@@ -116,25 +139,30 @@ export default function RestaurantCarousel({ dining }: { dining: DiningItem[] })
           className="flex items-center justify-center rounded-full transition-colors"
           style={{ width: '56px', height: '56px', minWidth: '56px', touchAction: 'manipulation', background: 'rgba(10,22,40,0.07)', color: 'var(--navy)' }}
         >
-          ‹
+          <ChevronLeft />
         </button>
 
-        {/* Dots */}
-        <div className="flex gap-1.5 flex-wrap justify-center" style={{ maxWidth: '260px' }}>
-          {dining.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              aria-label={`Go to ${dining[i].name}`}
-              className="rounded-full transition-all"
-              style={{
-                width: i === current ? '20px' : '8px',
-                height: '8px',
-                background: i === current ? 'var(--ocean)' : 'rgba(10,22,40,0.18)',
-              }}
-            />
-          ))}
-        </div>
+        {dining.length <= DOTS_THRESHOLD ? (
+          <div className="flex gap-1.5 flex-wrap justify-center" style={{ maxWidth: '260px' }}>
+            {dining.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                aria-label={`Go to ${dining[i].name}`}
+                className="rounded-full transition-all"
+                style={{
+                  width: i === current ? '20px' : '8px',
+                  height: '8px',
+                  background: i === current ? 'var(--ocean)' : 'rgba(10,22,40,0.18)',
+                }}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm font-medium" style={{ color: '#5a6e7e' }}>
+            {current + 1} <span style={{ opacity: 0.5 }}>of</span> {dining.length}
+          </p>
+        )}
 
         <button
           onClick={next}
@@ -142,13 +170,15 @@ export default function RestaurantCarousel({ dining }: { dining: DiningItem[] })
           className="flex items-center justify-center rounded-full transition-colors"
           style={{ width: '56px', height: '56px', minWidth: '56px', touchAction: 'manipulation', background: 'rgba(10,22,40,0.07)', color: 'var(--navy)' }}
         >
-          ›
+          <ChevronRight />
         </button>
       </div>
 
-      <p className="text-center text-xs mt-2" style={{ color: '#9aabb8' }}>
-        {current + 1} of {dining.length} dining options
-      </p>
+      {dining.length <= DOTS_THRESHOLD && (
+        <p className="text-center text-xs mt-2" style={{ color: '#5a6e7e' }}>
+          {current + 1} of {dining.length} dining options
+        </p>
+      )}
     </div>
   );
 }

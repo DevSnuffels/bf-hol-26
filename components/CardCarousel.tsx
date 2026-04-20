@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 interface CardItem {
   name: string;
@@ -10,28 +10,51 @@ interface CardItem {
   icon: string;
   desc: string;
   image: string;
+  images?: string[];
   extra?: string;
 }
 
 const PLACEHOLDER_GRADIENTS = [
-  'linear-gradient(135deg, #2c1654, #6c2a7c)',
-  'linear-gradient(135deg, #3d1a00, #8e4a00)',
-  'linear-gradient(135deg, #0d1b2a, #1d4e6b)',
-  'linear-gradient(135deg, #2a0005, #7b1a1a)',
-  'linear-gradient(135deg, #0a2a26, #1a6b5e)',
-  'linear-gradient(135deg, #1a1400, #8b6914)',
-  'linear-gradient(135deg, #0f2847, #1a5276)',
-  'linear-gradient(135deg, #1a0f2e, #4a1e78)',
+  'linear-gradient(135deg, #0a1628, #1a5276)',  // navy → ocean
+  'linear-gradient(135deg, #0f2847, #2e86c1)',  // deep-blue → azure
+  'linear-gradient(135deg, #1a5276, #2e86c1)',  // ocean → azure
+  'linear-gradient(135deg, #0a1628, #0f2847)',  // navy → deep-blue
+  'linear-gradient(135deg, #1a3a4a, #2e86c1)',  // dark teal → azure
+  'linear-gradient(135deg, #0f2847, #1a5276)',  // deep-blue → ocean
+  'linear-gradient(135deg, #2e86c1, #85c1e9)',  // azure → sky-blue
+  'linear-gradient(135deg, #0a1628, #2e86c1)',  // navy → azure
 ];
+
+const ChevronLeft = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M15 18l-6-6 6-6" />
+  </svg>
+);
+
+const ChevronRight = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M9 18l6-6-6-6" />
+  </svg>
+);
+
+const DOTS_THRESHOLD = 8;
 
 export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { items: CardItem[]; accentColor?: string }) {
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef(0);
 
   const next = () => setCurrent((c) => (c + 1) % items.length);
   const prev = () => setCurrent((c) => (c - 1 + items.length) % items.length);
 
+  const onTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 40) dx < 0 ? next() : prev();
+  };
+
   const item = items[current];
-  const isPlaceholder = item.image === 'placeholder';
+  const activeImage = item.images?.[0] ?? item.image;
+  const isPlaceholder = activeImage === 'placeholder';
 
   return (
     <div className="mb-6">
@@ -39,6 +62,8 @@ export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { 
       <div
         className="bg-white rounded-2xl overflow-hidden"
         style={{ boxShadow: '0 8px 40px rgba(10,22,40,0.10)' }}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
         {/* Image or placeholder */}
         <div className="relative" style={{ height: '210px', overflow: 'hidden' }}>
@@ -50,15 +75,15 @@ export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { 
               <span style={{ fontSize: '3.5rem', lineHeight: 1 }}>{item.icon}</span>
               <span
                 className="mt-3 text-xs uppercase tracking-[3px] font-medium"
-                style={{ color: 'rgba(255,255,255,0.5)' }}
+                style={{ color: 'rgba(255,255,255,0.75)' }}
               >
                 Photo coming soon
               </span>
             </div>
           ) : (
             <img
-              key={item.image}
-              src={item.image}
+              key={activeImage}
+              src={activeImage}
               alt={item.name}
               loading="lazy"
               className="w-full h-full object-cover"
@@ -104,7 +129,7 @@ export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { 
                 <span
                   key={tag}
                   className="text-xs px-2.5 py-1 rounded-full"
-                  style={{ background: 'rgba(46,134,193,0.1)', color: 'var(--ocean)' }}
+                  style={{ background: 'rgba(232,201,146,0.35)', color: 'var(--ocean)' }}
                 >
                   {tag}
                 </span>
@@ -121,42 +146,50 @@ export default function CardCarousel({ items, accentColor = 'var(--ocean)' }: { 
       <div className="flex items-center justify-between mt-3 px-1">
         <button
           onClick={prev}
-          aria-label="Previous"
+          aria-label={`Previous ${item.category}`}
           className="flex items-center justify-center rounded-full"
           style={{ width: '56px', height: '56px', minWidth: '56px', touchAction: 'manipulation', background: 'rgba(10,22,40,0.07)', color: 'var(--navy)', fontSize: '1.2rem' }}
         >
-          ‹
+          <ChevronLeft />
         </button>
 
-        <div className="flex gap-1.5 flex-wrap justify-center" style={{ maxWidth: '280px' }}>
-          {items.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              aria-label={`Go to ${items[i].name}`}
-              className="rounded-full transition-all"
-              style={{
-                width: i === current ? '20px' : '8px',
-                height: '8px',
-                background: i === current ? accentColor : 'rgba(10,22,40,0.18)',
-              }}
-            />
-          ))}
-        </div>
+        {items.length <= DOTS_THRESHOLD ? (
+          <div className="flex gap-1.5 flex-wrap justify-center" style={{ maxWidth: '280px' }}>
+            {items.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                aria-label={`Go to ${items[i].name}`}
+                className="rounded-full transition-all"
+                style={{
+                  width: i === current ? '20px' : '8px',
+                  height: '8px',
+                  background: i === current ? accentColor : 'rgba(10,22,40,0.18)',
+                }}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm font-medium" style={{ color: '#5a6e7e' }}>
+            {current + 1} <span style={{ opacity: 0.5 }}>of</span> {items.length}
+          </p>
+        )}
 
         <button
           onClick={next}
-          aria-label="Next"
+          aria-label={`Next ${item.category}`}
           className="flex items-center justify-center rounded-full"
           style={{ width: '56px', height: '56px', minWidth: '56px', touchAction: 'manipulation', background: 'rgba(10,22,40,0.07)', color: 'var(--navy)', fontSize: '1.2rem' }}
         >
-          ›
+          <ChevronRight />
         </button>
       </div>
 
-      <p className="text-center text-xs mt-2" style={{ color: '#9aabb8' }}>
-        {current + 1} of {items.length}
-      </p>
+      {items.length <= DOTS_THRESHOLD && (
+        <p className="text-center text-xs mt-2" style={{ color: '#5a6e7e' }}>
+          {current + 1} of {items.length}
+        </p>
+      )}
     </div>
   );
 }

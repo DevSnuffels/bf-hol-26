@@ -143,8 +143,8 @@ export default function Home() {
                   { label: 'Fly home', value: '18 Jul — PMI → BHD' },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex gap-3 text-sm">
-                    <span className="flex-shrink-0 font-medium" style={{ color: value === '—' ? '#9aabb8' : 'var(--navy)', minWidth: '72px' }}>{label}</span>
-                    <span style={{ color: value === '—' ? '#9aabb8' : '#4a5c6e' }}>{value}</span>
+                    <span className="flex-shrink-0 font-medium" style={{ color: value === '—' ? '#5a6e7e' : 'var(--navy)', minWidth: '72px' }}>{label}</span>
+                    <span style={{ color: value === '—' ? '#5a6e7e' : '#4a5c6e' }}>{value}</span>
                   </div>
                 ))}
               </div>

@@ -8,6 +8,7 @@ import RestaurantCarousel from '../../../components/RestaurantCarousel';
 import CardCarousel from '../../../components/CardCarousel';
 import InteractiveChecklist from '../../../components/InteractiveChecklist';
 import VideoEmbed from '../../../components/VideoEmbed';
+import BackToTop from '../../../components/BackToTop';
 
 interface FamilyPageProps {
   params: Promise<{ family: string }>;
@@ -46,6 +47,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
     { id: 'cabin', label: 'Your Cabin' },
     ...(family === 'boyle' ? [{ id: 'hotel', label: 'Hotel' }] : []),
     { id: 'flights', label: 'Flights' },
+    { id: 'advice', label: 'Expert Advice' },
     { id: 'checklist', label: 'Checklist' },
   ];
 
@@ -85,7 +87,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
             <Link
               href={family === 'boyle' ? '/families/ferris' : '/families/boyle'}
               className="text-sm px-5 py-2 rounded-full transition-opacity hover:opacity-80 self-start md:self-auto"
-              style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: 'white' }}
+              style={{ background: 'rgba(255,255,255,0.18)', border: '1px solid rgba(255,255,255,0.45)', color: 'white' }}
             >
               View {family === 'boyle' ? 'Ferris' : 'Boyle'} Family →
             </Link>
@@ -148,10 +150,21 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
           </p>
 
           {/* Ship card */}
-          <div
-            className="rounded-2xl p-8 mb-4 relative overflow-hidden"
-            style={{ background: 'linear-gradient(135deg, var(--deep-blue), var(--ocean))' }}
-          >
+          <div className="rounded-2xl mb-4 overflow-hidden" style={{ boxShadow: '0 8px 40px rgba(10,22,40,0.12)' }}>
+            {'image' in cruiseData && cruiseData.image && (
+              <div className="relative" style={{ height: '220px' }}>
+                <img
+                  src={(cruiseData as any).image}
+                  alt={cruiseData.ship}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(10,22,40,0.7) 0%, transparent 50%)' }} />
+              </div>
+            )}
+            <div
+              className="p-8 relative overflow-hidden"
+              style={{ background: 'linear-gradient(135deg, var(--deep-blue), var(--ocean))' }}
+            >
             <span className="absolute right-6 top-5 text-5xl" style={{ opacity: 0.12 }} aria-hidden="true">⚓</span>
             <h3 className="text-2xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
               {cruiseData.ship}
@@ -173,6 +186,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                   </div>
                 </div>
               ))}
+            </div>
             </div>
           </div>
 
@@ -196,7 +210,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
               return (
                 <div key={index} className="flex gap-5">
                   {/* Timeline marker */}
-                  <div className="flex flex-col items-center flex-shrink-0" style={{ width: '50px' }}>
+                  <div className="flex flex-col items-center flex-shrink-0" style={{ width: '50px' }} aria-hidden="true">
                     <div
                       className="rounded-full flex-shrink-0 z-10"
                       style={{
@@ -275,6 +289,8 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                           const accentColor = isBothFamilies ? 'var(--azure)' : 'var(--sunset)';
                           const excImages = 'images' in exc ? (exc as { images: { url: string; caption: string }[] }).images : [];
                           const excVideo = 'video' in exc ? (exc as { video?: string }).video : undefined;
+                          const excNotes = 'notes' in exc ? (exc as { notes?: string[] }).notes : undefined;
+                          const excTips = 'tips' in exc ? (exc as { tips?: string[] }).tips : undefined;
                           return (
                             <div
                               key={excIdx}
@@ -337,6 +353,46 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                                 </div>
                               )}
 
+                              {/* Excursion notes */}
+                              {excNotes && excNotes.length > 0 && (
+                                <div
+                                  className="mx-5 mb-4 rounded-xl p-4"
+                                  style={{ background: 'rgba(243,156,18,0.08)', borderLeft: '3px solid var(--sunset)' }}
+                                >
+                                  <p className="text-xs uppercase tracking-widest font-semibold mb-2" style={{ color: 'var(--sunset)' }}>
+                                    Just so you know
+                                  </p>
+                                  <ul className="space-y-1.5">
+                                    {excNotes.map((note, ni) => (
+                                      <li key={ni} className="text-xs flex items-start gap-2" style={{ color: '#4a5c6e' }}>
+                                        <span className="flex-shrink-0 mt-0.5" style={{ color: 'var(--sunset)' }}>→</span>
+                                        {note}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                              {/* Travel tips */}
+                              {excTips && excTips.length > 0 && (
+                                <div
+                                  className="mx-5 mb-4 rounded-xl p-4"
+                                  style={{ background: 'rgba(26,82,118,0.07)', borderLeft: '3px solid var(--ocean)' }}
+                                >
+                                  <p className="text-xs uppercase tracking-widest font-semibold mb-2" style={{ color: 'var(--ocean)' }}>
+                                    Travel tips
+                                  </p>
+                                  <ul className="space-y-1.5">
+                                    {excTips.map((tip, ti) => (
+                                      <li key={ti} className="text-xs flex items-start gap-2" style={{ color: '#4a5c6e' }}>
+                                        <span className="flex-shrink-0 mt-0.5" style={{ color: 'var(--ocean)' }}>✦</span>
+                                        {tip}
+                                      </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
                               {/* Excursion video */}
                               {excVideo && (
                                 <div className="px-5 pb-5">
@@ -385,8 +441,8 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                   <span
                     className="flex-shrink-0 mt-0.5 text-xs px-1.5 py-0.5 rounded font-medium"
                     style={{
-                      background: (item as { included: boolean }).included ? 'rgba(133,193,233,0.2)' : 'rgba(231,76,60,0.25)',
-                      color: (item as { included: boolean }).included ? 'var(--sky-blue)' : '#f1948a',
+                      background: (item as { included: boolean }).included ? 'rgba(26,82,118,0.15)' : 'rgba(192,57,43,0.18)',
+                      color: (item as { included: boolean }).included ? 'var(--ocean)' : '#c0392b',
                     }}
                   >
                     {(item as { included: boolean }).included ? '✓' : '£'}
@@ -599,6 +655,67 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                 ))}
               </div>
 
+              {/* Location & things to do */}
+              {'location_info' in familyData.hotel && (() => {
+                const loc = (familyData.hotel as any).location_info;
+                return (
+                  <div className="px-6 md:px-8 pb-8">
+                    <p className="text-xs uppercase tracking-[5px] mb-2 mt-2" style={{ color: 'var(--azure)', fontWeight: 600 }}>Location</p>
+                    <h4 className="text-xl font-bold mb-2" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)' }}>
+                      Sa Coma, East Majorca
+                    </h4>
+                    <p className="text-sm leading-relaxed mb-2" style={{ color: '#4a5c6e' }}>{loc.overview}</p>
+                    <p className="text-xs mb-6" style={{ color: '#5a6e7e' }}>
+                      <span aria-hidden="true">✈️ </span>{loc.distance}
+                    </p>
+
+                    {/* Highlights grid */}
+                    <p className="text-xs uppercase tracking-[4px] mb-3 font-semibold" style={{ color: 'var(--azure)' }}>What to do nearby</p>
+                    <div className="grid md:grid-cols-2 gap-3 mb-6">
+                      {loc.highlights.map((h: { name: string; distance: string; icon: string; desc: string }) => (
+                        <div
+                          key={h.name}
+                          className="rounded-xl p-4"
+                          style={{ background: 'rgba(250,248,243,0.8)', border: '1px solid rgba(10,22,40,0.07)' }}
+                        >
+                          <div className="flex items-start gap-3">
+                            <span className="text-xl flex-shrink-0" aria-hidden="true">{h.icon}</span>
+                            <div>
+                              <div className="flex items-center gap-2 flex-wrap mb-1">
+                                <p className="font-semibold text-sm" style={{ color: 'var(--navy)' }}>{h.name}</p>
+                                <span
+                                  className="text-xs px-2 py-0.5 rounded-full"
+                                  style={{ background: 'rgba(46,134,193,0.1)', color: 'var(--ocean)' }}
+                                >
+                                  {h.distance}
+                                </span>
+                              </div>
+                              <p className="text-xs leading-relaxed" style={{ color: '#4a5c6e' }}>{h.desc}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Tips */}
+                    <div
+                      className="rounded-r-xl p-5"
+                      style={{ background: 'rgba(46,134,193,0.07)', borderLeft: '3px solid var(--azure)' }}
+                    >
+                      <p className="text-sm font-semibold mb-3" style={{ color: 'var(--navy)' }}>Useful tips:</p>
+                      <ul className="space-y-2">
+                        {loc.tips.map((tip: string, i: number) => (
+                          <li key={i} className="text-sm flex items-start gap-2" style={{ color: '#4a5c6e' }}>
+                            <span className="flex-shrink-0 mt-0.5" style={{ color: 'var(--azure)' }}>→</span>
+                            {tip}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                );
+              })()}
+
               {/* Hotel video */}
               {'video' in familyData.hotel && familyData.hotel.video && (
                 <div className="px-6 md:px-8 pb-8">
@@ -611,6 +728,82 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
                 </div>
               )}
             </div>
+
+            {/* ── HOTEL DINING ────────────────────────────────── */}
+            {'dining' in familyData.hotel && (familyData.hotel as any).dining?.length > 0 && (
+              <div className="mt-10">
+                <div
+                  className="rounded-2xl p-8 mb-4 relative overflow-hidden"
+                  style={{ background: 'linear-gradient(135deg, #3d2600, #8b5e00)' }}
+                >
+                  <span className="absolute right-6 top-5 text-5xl" style={{ opacity: 0.12 }} aria-hidden="true">🍽️</span>
+                  <h3 className="text-xl font-bold text-white mb-1" style={{ fontFamily: 'var(--font-playfair)' }}>
+                    Dining — 7 Restaurants, 8 Bars
+                  </h3>
+                  <p className="text-sm mb-5" style={{ color: 'var(--warm-sand)', fontWeight: 300 }}>
+                    All Inclusive, 24 hours a day — Italian, Indian, Oriental, buffet, poolside and more
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+                    {(familyData.hotel as any).dining.map((item: { name: string; type: string; included: boolean }) => (
+                      <div key={item.name} className="flex items-start gap-2">
+                        <span
+                          className="flex-shrink-0 mt-0.5 text-xs px-1.5 py-0.5 rounded font-medium"
+                          style={{ background: 'rgba(232,201,146,0.2)', color: 'var(--warm-sand)' }}
+                        >
+                          ✓
+                        </span>
+                        <p className="text-sm leading-relaxed" style={{ color: 'var(--warm-sand)' }}>
+                          <strong className="text-white">{item.name}</strong>
+                          {' '}<span style={{ opacity: 0.65 }}>{item.type}</span>
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <RestaurantCarousel dining={(familyData.hotel as any).dining} />
+
+                {'diningNote' in familyData.hotel && (
+                  <div
+                    className="rounded-r-xl p-5 mb-6"
+                    style={{ background: 'rgba(243,156,18,0.08)', borderLeft: '3px solid var(--sunset)' }}
+                  >
+                    <p className="text-sm leading-relaxed" style={{ color: '#4a5c6e' }}>
+                      <strong style={{ color: 'var(--navy)' }}>Good to know:</strong> {(familyData.hotel as any).diningNote}
+                    </p>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* ── HOTEL POOLS & FACILITIES ────────────────────── */}
+            {'facilities' in familyData.hotel && (familyData.hotel as any).facilities?.length > 0 && (
+              <div className="mt-8">
+                <p className="text-xs uppercase tracking-[5px] mb-1" style={{ color: 'var(--azure)', fontWeight: 600 }}>Pools &amp; Facilities</p>
+                <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)' }}>
+                  5 Pools, Spa &amp; More
+                </h3>
+                <p className="text-sm mb-4" style={{ color: '#3a4a5c' }}>
+                  Family splash zone, adults' pool with Jacuzzi, swim-up bar, kids' pool with turtle jets, and the BLUE® Spa hydrothermal circuit.
+                </p>
+                <CardCarousel items={(familyData.hotel as any).facilities} accentColor="var(--ocean)" />
+              </div>
+            )}
+
+            {/* ── HOTEL ENTERTAINMENT ─────────────────────────── */}
+            {'entertainment' in familyData.hotel && (familyData.hotel as any).entertainment?.length > 0 && (
+              <div className="mt-8">
+                <p className="text-xs uppercase tracking-[5px] mb-1" style={{ color: 'var(--azure)', fontWeight: 600 }}>Entertainment &amp; Activities</p>
+                <h3 className="text-2xl font-bold mb-1" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)' }}>
+                  7 Nights of Shows &amp; Kids' Clubs
+                </h3>
+                <p className="text-sm mb-4" style={{ color: '#3a4a5c' }}>
+                  Nightly live entertainment, Kids' Club, teen activities, family sensory experiences, and even a resident robot.
+                </p>
+                <CardCarousel items={(familyData.hotel as any).entertainment} accentColor="var(--sunset)" />
+              </div>
+            )}
+
           </section>
         )}
 
@@ -670,6 +863,33 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
           </div>
         </section>
 
+        {/* ── TRAVEL CONSULTANT'S ADVICE ───────────────────────────────── */}
+        {'consultantAdvice' in familyData && (familyData as any).consultantAdvice?.length > 0 && (
+          <section id="advice">
+            <p className="text-xs uppercase tracking-[5px] mb-2" style={{ color: 'var(--azure)', fontWeight: 600 }}>Expert Advice</p>
+            <h2 className="text-3xl font-bold mb-2" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)' }}>
+              Travel Consultant's Notes
+            </h2>
+            <p className="text-base leading-relaxed mb-8" style={{ color: '#3a4a5c', maxWidth: '680px' }}>
+              A few tips from someone who knows these places well — the things that make the difference between a good holiday and a great one.
+            </p>
+            <div className="space-y-5">
+              {(familyData as any).consultantAdvice.map((tip: { heading: string; body: string }, i: number) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl p-6"
+                  style={{ boxShadow: '0 4px 20px rgba(10,22,40,0.06)', borderLeft: '3px solid var(--azure)' }}
+                >
+                  <h3 className="font-bold mb-2" style={{ fontFamily: 'var(--font-playfair)', color: 'var(--navy)', fontSize: '1.05rem' }}>
+                    {tip.heading}
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: '#4a5c6e' }}>{tip.body}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* ── PRE-HOLIDAY CHECKLIST ─────────────────────────────────────── */}
         <section id="checklist">
           <p className="text-xs uppercase tracking-[5px] mb-2" style={{ color: 'var(--azure)', fontWeight: 600 }}>Before You Go</p>
@@ -699,6 +919,7 @@ export default async function FamilyPage({ params }: FamilyPageProps) {
         <p className="text-base">Not long now — let the countdown begin!</p>
         <p className="text-xs mt-2" style={{ opacity: 0.4 }}>Holiday Summary · July 2026</p>
       </footer>
+      <BackToTop />
     </div>
   );
 }
